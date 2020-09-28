@@ -5,7 +5,7 @@
 Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end.
 
 ## :zap: O Desafio
-Seu objetivo é criar a página de detalhes do processo baseado no layout proposto.
+Seu objetivo é criar um App contendo a página de detalhes do processo baseado no layout proposto.
 
 Para acessar o layout
 
