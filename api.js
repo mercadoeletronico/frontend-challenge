@@ -6,7 +6,7 @@ app.use(cors())
 
 app.get('/orders/:id', (req, res) => {
   if (req.params.id != '1') {
-    return res.status(404).json({ message: `Order ${req.params.id} not found`, detail: 'Ensure that the id included in the request are correct' })
+    return res.status(404).json({ message: `Order ${req.params.id} not found.`, detail: 'Ensure that the id included in the request are correct.' })
   }
 
   res.json({
