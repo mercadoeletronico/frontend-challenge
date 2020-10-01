@@ -5,9 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #7f7f7f;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cnt-order-card {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ffffff;
+  margin-top: 100px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
