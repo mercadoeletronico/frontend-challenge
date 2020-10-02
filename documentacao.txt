@@ -23,5 +23,9 @@ Foi embarcado ao projeto a tecnologia de de pré-processamento SASS. Com ela, pod
 
 Para os testes a ferramenta utilizada foi a Cypress.
 
+================================================================================================
+
+Os icones utilizados foram obtidos através de uma biblioteca pública chamada Material.io (https://material.io/resources/icons/?style=baseline). Com isso, não precisamos gerar diversas imagens para cada icone.
+
 
 
