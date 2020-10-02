@@ -1,0 +1,133 @@
+@import '../../styles/main.scss';
+
+.cnt-supplier {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 25px;
+
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+
+    h1 {
+        @include roboto-regular;
+        font-size: 12px;
+        color: $gray;
+    }
+
+    span {
+        color: $gray;
+    }
+
+    p {
+        @include roboto-light;
+        font-size: 12px;
+        color: $black;
+        padding-top: 2px;
+    }
+
+    span.supplier-name {
+        display: block;
+        float: left;
+        @include roboto-medium;
+        font-size: 14px;
+        color: $blue;
+        margin-right: 10px;
+    }
+
+    span.supplier-code {
+        display: block;
+        float: left;
+        @include roboto-regular;
+        font-size: 12px;
+        color: $gray;
+        background: $acqua;
+        border-radius: 10px;
+        padding: 2px 10px;
+    }
+
+    .supplier-numder {
+        display: block;
+        float: left;
+        overflow: hidden;
+    }
+
+    .supplier-contact {
+        display: block;
+        float: left;
+        overflow: hidden;
+
+        span {
+            float: left;
+        }
+
+        p {
+            float: left;
+            padding-left: 5px;
+
+            a {
+                color: $bluelink;
+                text-decoration: none;
+                @include transition(0.2s);
+
+                &:hover {
+                    color: $gray;
+                }
+            }
+        }
+    }
+
+    .supplier-view {
+        display: block;
+        float: left;
+        overflow: hidden;
+
+        span {
+            float: left;
+        }
+
+        p {
+            float: left;
+            padding-left: 5px;
+        }
+    }
+
+    .supplier-address {
+        display: block;
+        float: left;
+        overflow: hidden;
+    }
+
+    .supplier-phone {
+        display: block;
+        float: left;
+        overflow: hidden;
+
+        span {
+            float: left;
+        }
+
+        p {
+            float: left;
+            padding-left: 5px;
+        }
+    }
+
+    .supplier-replay {
+        display: block;
+        float: left;
+        overflow: hidden;
+
+        span {
+            float: left;
+        }
+
+        p {
+            float: left;
+            padding-left: 5px;
+        }
+    }
+}
