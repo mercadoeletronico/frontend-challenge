@@ -1,0 +1,160 @@
+
+
+@media screen and (max-width: 1590px) {
+    .cnt-order-number {
+        h1 {
+            font-size: 14px;
+        }
+        .order-number {
+            font-size: 18px;
+        }
+        .cnt-me-logo {
+            top: 10px;
+        }
+        .serial-number {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .cnt-order-number {
+        h1 {
+            font-size: 14px;
+        }
+        .order-number {
+            font-size: 18px;
+        }
+        .cnt-me-logo {
+            top: 10px;
+        }
+        .serial-number {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cnt-order-number {
+        padding-left: 17px;
+
+        h1 {
+            font-size: 12px;
+        }
+        .order-number {
+            font-size: 14px;
+        }
+        .cnt-me-logo {
+            top: 13px;
+            right: -33px;
+            width: 45px;
+            height: 45px;
+            img {
+                width: 50%;
+            }
+        }
+        .serial-number {
+            font-size: 8px;
+        }
+    }
+
+    .cnt-status {
+        h1.purchase-value {
+            font-size: 24px;
+    
+        }
+    
+        h2.status {
+            font-size: 16px;
+        }
+    
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .cnt-order-number {
+        width: 50%;
+        padding-left: 17px;
+
+        h1 {
+            font-size: 18px;
+        }
+        .order-number {
+            font-size: 22px;
+        }
+        .cnt-me-logo {
+            top: 15px;
+            right: -35px;
+            width: 60px;
+            height: 60px;
+            img {
+                width: 70%;
+            }
+        }
+        .serial-number {
+            font-size: 12px;
+        }
+    }
+    .cnt-status {
+        h1.purchase-value {
+            text-align: left;
+            font-size: 26px;
+    
+        }
+    
+        h2.status {
+            font-size: 20px;
+            text-align: left;
+        }
+    
+        p {
+            font-size: 12px;
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cnt-order-number {
+        width: 60%;
+        padding-left: 17px;
+
+        .cnt-me-logo {
+            top: 15px;
+            right: -35px;
+            width: 60px;
+            height: 60px;
+            img {
+                width: 70%;
+            }
+        }
+        .serial-number {
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .cnt-order-number {
+        width: 70%;
+        padding-left: 17px;
+
+        .cnt-me-logo {
+            top: 15px;
+            right: -35px;
+            width: 60px;
+            height: 60px;
+            img {
+                width: 70%;
+            }
+        }
+        .serial-number {
+            font-size: 12px;
+        }
+    }
+
+}

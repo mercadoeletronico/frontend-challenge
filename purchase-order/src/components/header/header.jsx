@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 import axios from 'axios';
 import NumberFormat from 'react-number-format';
 import './header.scss';
+import './mobile.scss';
 import Teste from '../../img/logo-me.jpg';
 
 export default function Header(){
@@ -31,7 +32,7 @@ export default function Header(){
         <Fragment>
             <div className="row">
 
-                <div className="col-sm-2">
+                <div className="col-sm-3 col-12">
                     <div className="cnt-order-number">
                         <h1>Purchase Order</h1>
                         <p className="order-number">{cnttext.number}</p>
@@ -41,7 +42,7 @@ export default function Header(){
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-8">
+                <div className="col-sm-6 col-12">
                     <div className="cnt-client-info">
                         <h1>{cnttext.buyer}</h1>
                         
@@ -77,7 +78,7 @@ export default function Header(){
                         
                     </div>
                 </div>
-                <div className="col-sm-2">
+                <div className="col-sm-3 col-12">
                     
                     <div className="cnt-status">
                         <h1 className="purchase-value">

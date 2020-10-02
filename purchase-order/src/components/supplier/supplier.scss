@@ -51,13 +51,13 @@
 
     .supplier-numder {
         display: block;
-        float: left;
+        clear: both;
         overflow: hidden;
     }
 
     .supplier-contact {
         display: block;
-        float: left;
+        padding-top: 20px;
         overflow: hidden;
 
         span {
@@ -82,8 +82,8 @@
 
     .supplier-view {
         display: block;
-        float: left;
         overflow: hidden;
+        padding-top: 20px;
 
         span {
             float: left;
@@ -118,7 +118,6 @@
 
     .supplier-replay {
         display: block;
-        float: left;
         overflow: hidden;
 
         span {

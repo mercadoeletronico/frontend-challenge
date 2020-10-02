@@ -1,0 +1,15 @@
+@media screen and (max-width: 414px) {
+    .cnt-supplier {
+        p {
+            font-size: 12px;
+        }
+
+        .supplier-contact {
+            p {
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+}

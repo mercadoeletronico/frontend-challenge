@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import './main.scss';
+import './mobile.scss';
 
 import Head from './header/header';
 import Supplier from './supplier/supplier';
@@ -31,13 +32,13 @@ export default function Main() {
                             </div>
                             <h1>Addresses</h1>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-4">
                             <Shipto />
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-4">
                             <Billto />
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-4">
                             <Chargeto />
                         </div>
                     </div>

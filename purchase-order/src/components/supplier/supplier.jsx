@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 import axios from 'axios';
 import NumberFormat from 'react-number-format';
 import './supplier.scss';
+import './mobile.scss';
 
 export default function Supplier() {
 
@@ -33,34 +34,19 @@ export default function Supplier() {
             <div className="cnt-supplier">
                 <h1>Supplier</h1>
                 <div className="row">
-                    <div className="col-sm-12">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-4">
                         <span className="supplier-name">{suppliercnt.name}</span>
                         <span className="supplier-code">Code #{suppliercnt.code}</span>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-4">
+
                         <div className="supplier-numder"><p>{supplierdoc.value}</p></div>
+
+                        <div className="supplier-address"><p>{suppliercnt.address}</p></div>
                     </div>
-                    <div className="col-sm-4">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-4">
                         <div className="supplier-contact">
                             <span className="material-icons md-20">person_outline</span>
                             <p>{suppliercontact.name} -  <a href={"mailto:" + suppliercontact.email}>{suppliercontact.email}</a></p>
                         </div>
-                    </div>
-                    <div className="col-sm-4">
-                        <div className="supplier-view">
-                            <span className="material-icons md-20">visibility</span>
-                            <p>Read: </p>
-                            <p><NumberFormat format="####/##/## - ##:##" displayType={'text'} mask={['Y', 'Y', 'Y', 'Y', 'M', 'M', 'D', 'D', 'H', 'H', 'M', 'M']} value={suppliercnt.readAt}/></p>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-4">
-                        <div className="supplier-address"><p>{suppliercnt.address}</p></div>
-                    </div>
-                    <div className="col-sm-4">
                         <div className="supplier-phone">
                             <span className="material-icons md-20">phone_enabled</span>
                             <p>{suppliercontact.phone}&nbsp; - &nbsp;</p>
@@ -68,7 +54,12 @@ export default function Supplier() {
                             <p>{suppliercontact.fax}</p>
                         </div>
                     </div>
-                    <div className="col-sm-4">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div className="supplier-view">
+                            <span className="material-icons md-20">visibility</span>
+                            <p>Read: </p>
+                            <p><NumberFormat format="####/##/## - ##:##" displayType={'text'} mask={['Y', 'Y', 'Y', 'Y', 'M', 'M', 'D', 'D', 'H', 'H', 'M', 'M']} value={suppliercnt.readAt}/></p>
+                        </div>
                         <div className="supplier-replay">
                             <span className="material-icons md-20">reply</span>
                             <p>Last Reply:</p>
