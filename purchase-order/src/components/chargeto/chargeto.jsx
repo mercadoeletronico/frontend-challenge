@@ -37,28 +37,28 @@ export default function Chargeto() {
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="cnt-ico"><span className="material-icons md-20">where_to_vote</span></div>
-                        <div className="chargeto-address"><p>{chargecnt.address}</p></div>
+                        <div className="chargeto-address"><p data-cy="client-address">{chargecnt.address}</p></div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="cnt-ico"><span className="material-icons md-20">person_outline</span></div>
-                        <div className="chargeto-contact-name"><p>{chargecontact.name}</p></div>
+                        <div className="chargeto-contact-name"><p data-cy="client-contact-name">{chargecontact.name}</p></div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="cnt-ico"><span className="material-icons md-20">mail_outline</span></div>
-                        <div className="chargeto-contact-mail"><p>{chargecontact.email}</p></div>
+                        <div className="chargeto-contact-mail"><p data-cy="client-contact-mail">{chargecontact.email}</p></div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="chargeto-contact-phone">
                             <span className="material-icons md-20">phone_enabled</span>
-                            <p>{chargecontact.phone}&nbsp;&nbsp; </p>
+                            <p data-cy="client-contact-phone">{chargecontact.phone}&nbsp;&nbsp; </p>
                             <span className="material-icons md-20">perm_phone_msg</span>
-                            <p>{chargecontact.fax}</p>
+                            <p data-cy="client-contact-fax">{chargecontact.fax}</p>
                         </div>
                     </div>
                 </div>

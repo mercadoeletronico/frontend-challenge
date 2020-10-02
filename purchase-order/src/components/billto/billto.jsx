@@ -37,28 +37,28 @@ export default function Billto() {
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="cnt-ico"><span className="material-icons md-20">where_to_vote</span></div>
-                        <div className="billto-address"><p>{billcnt.address}</p></div>
+                        <div className="billto-address"><p data-cy="client-address">{billcnt.address}</p></div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="cnt-ico"><span className="material-icons md-20">person_outline</span></div>
-                        <div className="billto-contact-name"><p>{billcontact.name}</p></div>
+                        <div className="billto-contact-name"><p data-cy="client-contact-name">{billcontact.name}</p></div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="cnt-ico"><span className="material-icons md-20">mail_outline</span></div>
-                        <div className="billto-contact-mail"><p>{billcontact.email}</p></div>
+                        <div className="billto-contact-mail"><p data-cy="client-contact-mail">{billcontact.email}</p></div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="billto-contact-phone">
                             <span className="material-icons md-20">phone_enabled</span>
-                            <p>{billcontact.phone}&nbsp;&nbsp; </p>
+                            <p data-cy="client-contact-phone">{billcontact.phone}&nbsp;&nbsp; </p>
                             <span className="material-icons md-20">perm_phone_msg</span>
-                            <p>{billcontact.fax}</p>
+                            <p data-cy="client-contact-fax">{billcontact.fax}</p>
                         </div>
                     </div>
                 </div>

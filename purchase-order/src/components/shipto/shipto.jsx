@@ -37,28 +37,28 @@ export default function Shipto() {
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="cnt-ico"><span className="material-icons md-20">where_to_vote</span></div>
-                        <div className="shipto-address"><p>{shipcnt.address}</p></div>
+                        <div className="shipto-address"><p data-cy="client-address">{shipcnt.address}</p></div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="cnt-ico"><span className="material-icons md-20">person_outline</span></div>
-                        <div className="shipto-contact-name"><p>{shipcontact.name}</p></div>
+                        <div className="shipto-contact-name"><p data-cy="client-contact-name">{shipcontact.name}</p></div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="cnt-ico"><span className="material-icons md-20">mail_outline</span></div>
-                        <div className="shipto-contact-mail"><p>{shipcontact.email}</p></div>
+                        <div className="shipto-contact-mail"><p data-cy="client-contact-mail">{shipcontact.email}</p></div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="shipto-contact-phone">
                             <span className="material-icons md-20">phone_enabled</span>
-                            <p>{shipcontact.phone}&nbsp;&nbsp; </p>
+                            <p data-cy="client-contact-phone">{shipcontact.phone}&nbsp;&nbsp; </p>
                             <span className="material-icons md-20">perm_phone_msg</span>
-                            <p>{shipcontact.fax}</p>
+                            <p data-cy="client-contact-fax">{shipcontact.fax}</p>
                         </div>
                     </div>
                 </div>

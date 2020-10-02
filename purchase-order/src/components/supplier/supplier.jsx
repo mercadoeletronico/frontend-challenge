@@ -35,23 +35,23 @@ export default function Supplier() {
                 <h1>Supplier</h1>
                 <div className="row">
                     <div className="col-12 col-sm-12 col-md-12 col-lg-4">
-                        <span className="supplier-name">{suppliercnt.name}</span>
-                        <span className="supplier-code">Code #{suppliercnt.code}</span>
+                        <span className="supplier-name" data-cy="client-name">{suppliercnt.name}</span>
+                        <span className="supplier-code" data-cy="client-code">Code #{suppliercnt.code}</span>
 
-                        <div className="supplier-numder"><p>{supplierdoc.value}</p></div>
+                        <div className="supplier-numder" data-cy="client-mumber-cnpj"><p>{supplierdoc.value}</p></div>
 
-                        <div className="supplier-address"><p>{suppliercnt.address}</p></div>
+                        <div className="supplier-address" data-cy="client-address"><p>{suppliercnt.address}</p></div>
                     </div>
                     <div className="col-12 col-sm-12 col-md-12 col-lg-4">
                         <div className="supplier-contact">
                             <span className="material-icons md-20">person_outline</span>
-                            <p>{suppliercontact.name} -  <a href={"mailto:" + suppliercontact.email}>{suppliercontact.email}</a></p>
+                            <p data-cy="client-contact-name">{suppliercontact.name} -  <a href={"mailto:" + suppliercontact.email} data-cy="client-contact-mail">{suppliercontact.email}</a></p>
                         </div>
                         <div className="supplier-phone">
                             <span className="material-icons md-20">phone_enabled</span>
-                            <p>{suppliercontact.phone}&nbsp; - &nbsp;</p>
+                            <p data-cy="client-contact-phone">{suppliercontact.phone}&nbsp; - &nbsp;</p>
                             <span className="material-icons md-20">perm_phone_msg</span>
-                            <p>{suppliercontact.fax}</p>
+                            <p data-cy="client-contact-fax">{suppliercontact.fax}</p>
                         </div>
                     </div>
                     <div className="col-12 col-sm-12 col-md-12 col-lg-4">
