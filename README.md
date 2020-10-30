@@ -17,6 +17,6 @@ Teste de Front-End - Mercado Eletrônico
 
 ## Melhorias Futuras
 
-[ ] Criar máscara para valor - Mascaras disponiveis existentes atualmente servem apenas para campos do tipo Input
-[ ] Fazer tratamento das datas
-[ ] Configurar dinamismo do ícone no *collapsable* *Addresses*
+- [ ] Criar máscara para valor - Mascaras disponiveis existentes atualmente servem apenas para campos do tipo Input
+- [ ] Fazer tratamento das datas
+- [ ] Configurar dinamismo do ícone no *collapsable* *Addresses*
