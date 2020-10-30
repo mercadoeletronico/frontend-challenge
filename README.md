@@ -2,38 +2,21 @@
 
 # Front-end Challenge
 
-Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end.
+Teste de Front-End - Mercado Eletrônico
 
-## :zap: O Desafio
-Seu objetivo é criar um App contendo a página de detalhes do processo baseado no layout proposto.
+## Instalação
 
-Para acessar o layout
+* Faça o clone do repositório na pasta de sua preferência
+* Acesse a pasta ```front-mercado-eletronico``` via terminal e execute o comando ```npm install``` para baixar as dependências
+* Execute o comando ```npm run serve``` para executar a aplicação.
+* Acesse o endereço [http://localhost:8081/](http://localhost:8081/) no browser de sua preferência.
 
-1. Acesse o link [https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362](https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362).
-2. Caso tenha algum problema ou dúvida na visualização do sketch favor nos avisar.
+## Alterações ocorridas
 
-Os dados apresentados pela página deverão ser consumidos através da seguinte API.
+* Estilo de iconografia - Não foi localizado o pack de ícones utilizado no modelo proposto
 
-> GET https://me-frontend-challenge-api.herokuapp.com/orders/1
+## Melhorias Futuras
 
-## :clipboard: Requisitos
-
-### Requisitos obrigatórios
-* Documentação
-  * Instruções de instalação e inicialização
-  * Descrição sobre as tecnologias utilizadas no projeto
-* Design responsivo
-
-### Você pode
-* Utilizar qualquer framework JS moderno (React, Vue, Svelte...)
-* Alterar a proposta do layout caso necessário - você terá que nos explicar o porque das mudanças!
-
-### O que gostaríamos de ver
-* Uma arquitetura consistente, focada na simplicidade do projeto (**keep it simple!**)
-* Testes unitários, e2e e/ou coverage (testes são parte importante do desenvolvimento; você pode utilizar Jest, Cypress, Mocha, Istanbul, Chai...)
-
-## :rocket: Entrega
-Para enviar seu código, você pode:
-
-* Enviar a URL do seu repositório no GitHub para o(a) Recrutador(a)
-* Fazer um fork deste repositório, criar uma branch com o seu nome e enviar um pull request
+[ ] Criar máscara para valor - Mascaras disponiveis existentes atualmente servem apenas para campos do tipo Input
+[ ] Fazer tratamento das datas
+[ ] Configurar dinamismo do ícone no *collapsable* *Addresses*
