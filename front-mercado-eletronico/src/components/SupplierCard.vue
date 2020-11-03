@@ -44,11 +44,11 @@
             </b-col>
             <b-col cols="3" lg="3">
               <b-card-text id="supplierData"
-                ><b-icon icon="eye" id="bIcon"> </b-icon>  Read: {{ supplier.readAt }}</b-card-text
+                ><b-icon icon="eye" id="bIcon"> </b-icon>  Read: {{ supplier.readAt | formatDateHour }}</b-card-text
               >
               <b-card-text id="supplierData"
                 ><b-icon icon="reply" id="bIcon"></b-icon>
-                Last Reply: {{ supplier.lastReplyAt }}</b-card-text
+                Last Reply: {{ supplier.lastReplyAt | formatDateHour }}</b-card-text
               >
             </b-col>
           </b-row>

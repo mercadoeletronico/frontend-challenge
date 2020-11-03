@@ -19,7 +19,7 @@
       >
       <b-col cols="6" lg="6" sm="12" id="buyerColumn">
         <b-card-text id="buyer">{{ header.buyer }}</b-card-text>
-        <b-card-text id="buyerData"><b-icon icon="people"></b-icon> {{ header.contact.name }}</b-card-text>
+        <b-card-text id="buyerData"><b-icon icon="people"></b-icon> {{ header.contact.name }} <b-icon icon="info-circle" id="info-circle"></b-icon></b-card-text>
         <b-row>
           <b-col cols="5" lg="5">
             <b-card-text id="buyerData"><b-icon icon="envelope"></b-icon> {{ header.contact.email }}</b-card-text>
@@ -35,14 +35,14 @@
       <b-col cols="3" lg="3" sm="12" id="transaction">
         
         <b-card-text class="text-right" id="price">
-          {{ header.currency }} {{ header.price }}
+          {{ header.currency }} {{ header.price | toCurrency }}
         </b-card-text>
        
         <b-card-text class="text-right" id="status">{{
           header.status
         }}</b-card-text>
         <b-card-text class="text-right"
-          >Created at {{ header.createdAt }}</b-card-text
+          >Created at {{ header.createdAt | formatDate }}</b-card-text
         >
       </b-col>
     </b-row>
@@ -76,6 +76,11 @@ export default {
 #header {
   margin-left: 46px;
   font-size: 12px;
+}
+#info-circle{
+  color:#0A8CCC;
+  position: relative;
+  left: 2px;
 }
 #purchaseCard {
   width: 201px;
