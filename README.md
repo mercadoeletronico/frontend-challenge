@@ -14,9 +14,3 @@ Teste de Front-End - Mercado Eletrônico
 ### Alterações ocorridas
 
 * Estilo de iconografia - Não foi localizado o pack de ícones utilizado no modelo proposto
-
-### Melhorias Futuras
-
-- [ ] Criar máscara para valor - Mascaras disponiveis existentes atualmente servem apenas para campos do tipo Input
-- [ ] Fazer tratamento das datas
-- [ ] Configurar dinamismo do ícone no *collapsable* *Addresses*
