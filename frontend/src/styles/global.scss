@@ -1,0 +1,27 @@
+//Bootstrap
+@import '../../node_modules/bootstrap/scss/functions';
+
+// Custom variables and breakpoints
+@import './dependencies/custom-variables.scss';
+
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/tables';
+@import '../../node_modules/bootstrap/scss/utilities';
+
+//Import Global variables
+@import './globalVariables.scss';
+
+//Import Depenpencies
+@import './dependencies/mixins/borders.scss';
+@import './dependencies/reset/reset.scss';
+
+//Import design-tokens
+@import './components/00-design-tokens/d-icons.scss';
+@import './components/00-design-tokens/d-colors.scss';
+@import './components/00-design-tokens/d-texts.scss';
+
+// Import elements
+@import './components/01-elements/e-badge-pill/e-badge-pill.scss';
+@import './components/01-elements/e-box/e-box.scss';
+@import './components/01-elements/e-purchase-header/e-purchase-header.scss';

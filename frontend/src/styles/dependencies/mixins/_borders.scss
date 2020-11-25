@@ -1,0 +1,26 @@
+@mixin borders(
+  $top: $border-size,
+  $right: $border-size,
+  $bottom: $border-size,
+  $left: $border-size,
+  $color: transparent,
+  $style: none,
+  $important: false
+) {
+  @if $important==false {
+    $important: '';
+  } @else if $important==true {
+    $important: '!important';
+  }
+
+  @if $top and $right and $bottom and $left==$border-size {
+    border: 0 $style $color !important;
+  } @else {
+    border-top-width: $top + $border-unit-size;
+    border-right-width: $right + $border-unit-size;
+    border-bottom-width: $bottom + $border-unit-size;
+    border-left-width: $left + $border-unit-size;
+    border-color: $color;
+    border-style: $style;
+  }
+}

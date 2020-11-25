@@ -1,0 +1,66 @@
+.e-box {
+  width: 100%;
+  background: $color-white;
+  overflow: hidden;
+
+  padding-top: $p-3;
+  padding-right: $p-3;
+  padding-bottom: $p-3;
+  padding-left: $p-3;
+
+  box-shadow: $box-shadow-default;
+  transition: box-shadow 0.15s ease-in-out;
+
+  border-radius: $radius-sm;
+
+  &.--solid-border {
+    box-shadow: none;
+    @include borders(1, 1, 1, 1, $color-gray, solid);
+
+    &.--transition-off {
+      &:hover {
+        box-shadow: none !important;
+        transition: none !important;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-hover-default;
+  }
+
+  // Turn off hover shadow effect
+  &.--transition-off {
+    &:hover {
+      box-shadow: $box-shadow-default !important;
+      transition: none !important;
+    }
+  }
+
+  // Adjust size and remove text decoration if box is a link
+  &.--box-link {
+    display: block;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
+}
+
+@include media-breakpoint-up(xxl) {
+}
+
+@include media-breakpoint-up(xxxl) {
+}

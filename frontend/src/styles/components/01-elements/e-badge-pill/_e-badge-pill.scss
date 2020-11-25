@@ -1,0 +1,59 @@
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .badge {
+    transition: none;
+  }
+}
+a.badge:hover,
+a.badge:focus {
+  text-decoration: none;
+}
+.badge:empty {
+  display: none;
+}
+
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+
+.e-pill {
+  @extend .badge;
+  @extend .badge-pill;
+
+  font-size: 14px;
+
+  background-color: $color-gray;
+
+  width: 100%;
+  color: $color-white;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  padding: 0;
+}
+
+// @include media-breakpoint-up(sm) {}
+
+// @include media-breakpoint-up(md) {}
+
+// @include media-breakpoint-up(lg) {}
+
+// @include media-breakpoint-up(xl) {}
+
+// @include media-breakpoint-up(xxl) {}
+
+// @include media-breakpoint-up(xxxl) {}
