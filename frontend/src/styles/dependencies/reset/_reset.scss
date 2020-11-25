@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -21,7 +21,6 @@ body {
   background-color: $color-white;
   max-width: 1100px;
   margin: 22px auto;
-  padding: 10px 20px 0 0;
   border-radius: 8px;
 }
 
@@ -29,7 +28,7 @@ body,
 input,
 button,
 textarea {
-  font: 14px 'Roboto', sans-serif;
+  font: 14px "Roboto", sans-serif;
 }
 
 p {

@@ -19,6 +19,12 @@
   font-size: $text-xxl;
 }
 
+.text-inline-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 // Strong
 .fw-600 {
   font-weight: $fw-600;
@@ -26,5 +32,3 @@
 .fw-700 {
   font-weight: $fw-700;
 }
-
-
