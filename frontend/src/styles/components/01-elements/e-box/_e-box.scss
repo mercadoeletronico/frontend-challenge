@@ -13,6 +13,10 @@
 
   border-radius: $radius-sm;
 
+  &.--fixed {
+    height: 12.125rem;
+  }
+
   &.--solid-border {
     box-shadow: none;
     @include borders(1, 1, 1, 1, $color-gray, solid);
@@ -36,31 +40,4 @@
       transition: none !important;
     }
   }
-
-  // Adjust size and remove text decoration if box is a link
-  &.--box-link {
-    display: block;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
-@include media-breakpoint-up(sm) {
-}
-
-@include media-breakpoint-up(md) {
-}
-
-@include media-breakpoint-up(lg) {
-}
-
-@include media-breakpoint-up(xl) {
-}
-
-@include media-breakpoint-up(xxl) {
-}
-
-@include media-breakpoint-up(xxxl) {
 }

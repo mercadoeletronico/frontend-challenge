@@ -1,7 +1,7 @@
 .header-format {
   margin-top: 0;
-  margin-bottom: 20px;
-  padding: 10px 20px 0 0;
+  margin-bottom: 1.25rem;
+  padding: 0.625rem 1.25rem 0 0;
 }
 
 .purchase-buyer {
@@ -19,47 +19,52 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 89px;
+  height: 5.5625rem;
   width: 100%;
   background: $color-primary;
   color: $color-white;
-  padding: 0px 22px;
+  padding: 0 1.375rem;
 
   .__me-logo {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
 
     background-color: $color-white;
     border-radius: 50%;
-    border: 3px solid $color-secundary;
+    border: 0.1875rem solid $color-secundary;
 
     img {
-      height: 46px;
-      width: 46px;
-      padding: 3px 5px;
+      height: 2.875rem;
+      width: 2.875rem;
+      padding: 0.1875rem 0.3125rem;
     }
   }
 }
 
 @include media-breakpoint-up(sm) {
 }
-
+@media screen and (max-width: 768px) {
+  .header-format {
+    margin-top: 1.25rem;
+    padding: 0;
+  }
+}
 @include media-breakpoint-up(md) {
   .header-format {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
   .e-purchase-header {
     position: relative;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 0.5rem 0.5rem 0;
 
     .__me-logo {
       position: absolute;
-      right: -29px;
-      top: 14px;
+      right: -1.8125rem;
+      top: 0.875rem;
     }
   }
 }

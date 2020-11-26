@@ -23,35 +23,39 @@ export default function Header({ headerInfo }) {
             <h1 className="text-xxxl fw-600 mb-2">{headerInfo.buyer}</h1>
             <div className="d-flex align-items-center mb-2">
               <p className="mr-xl-2">
-                <FaUsers className="mr-1" />
+                <FaUsers className="icon-md mr-1" />
                 {headerInfo.contact.name}
               </p>
-              <FaInfoCircle />
+              <FaInfoCircle className="icon-md" />
             </div>
 
             <div className="d-flex flex-column flex-xl-row">
               <p className="d-flex align-items-center mr-xl-4 mb-2">
-                <FaEnvelope className="mr-1" />
+                <FaEnvelope className="icon-md mr-1" />
                 {headerInfo.contact.email}
               </p>
-              <p className="d-flex align-items-center mr-xl-2 mb-2">
-                <FaPhone className="mr-1" />
-                {headerInfo.contact.phone}
-              </p>
-              <p className="d-flex align-items-center mr-xl-2 mb-2">
-                <FaFax className="mr-1" />
-                {headerInfo.contact.fax}
-              </p>
+              <div className="d-flex">
+                <p className="d-flex align-items-center mr-xl-2 mb-2 mr-2">
+                  <FaPhone className="icon-md mr-1" />
+                  {headerInfo.contact.phone}
+                </p>
+                <p className="d-flex align-items-center mr-xl-2 mb-2">
+                  <FaFax className="icon-md mr-1" />
+                  {headerInfo.contact.fax}
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div className="col-12 col-sm-6 col-md-4 col-lg-3">
           <div className="d-flex flex-column align-items-sm-end align-items-center pr-0 pr-sm-3">
-            <h1 className="text-xxxl fw-600 mb-2">{`USD ${headerInfo.price}`}</h1>
+            <h1 className="text-xxxl fw-600 mb-2">
+              {`USD ${headerInfo.price}`}
+            </h1>
             <strong className="text-lg color-golden fw-600 mb-2">
               {headerInfo.status}
             </strong>
-            <p>
+            <p className="text-sm">
               {`Created on ${moment(headerInfo.createdAt).format(
                 "MM/DD/YYYY"
               )}`}
