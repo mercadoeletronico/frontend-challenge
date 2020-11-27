@@ -6,7 +6,7 @@ import CardAddresses from "../../components/CardAddresses";
 import api from "../../services/api";
 
 export default function PurchaseOrder() {
-  const [addresses, setAddresses] = useState([]);
+  const [addresses, setAddresses] = useState();
   const [header, setHeader] = useState();
   const [supplier, setSupplier] = useState();
 
@@ -32,13 +32,15 @@ export default function PurchaseOrder() {
         </div>
         <div className="row">
           <div className="col-12">
-            <Accordion title="Addresses">
-              {addresses.map((address, index) => (
-                <div key={addresses[index]} className="col-12 col-md-4">
-                  <CardAddresses addressInfo={address} />
-                </div>
-              ))}
-            </Accordion>
+            {addresses && (
+              <Accordion title="Addresses">
+                {addresses.map((address, index) => (
+                  <div key={addresses[index]} className="col-12 col-md-4">
+                    <CardAddresses addressInfo={address} />
+                  </div>
+                ))}
+              </Accordion>
+            )}
           </div>
         </div>
       </div>
