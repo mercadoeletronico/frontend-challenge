@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import Supplier from "../../components/Supplier";
 import Accordion from "../../components/Accordion";
-import Card from "../../components/Card";
+import CardAddresses from "../../components/CardAddresses";
 import api from "../../services/api";
 
 export default function PurchaseOrder() {
@@ -35,7 +35,7 @@ export default function PurchaseOrder() {
             <Accordion title="Addresses">
               {addresses.map((address, index) => (
                 <div key={addresses[index]} className="col-12 col-md-4">
-                  <Card addressInfo={address} />
+                  <CardAddresses addressInfo={address} />
                 </div>
               ))}
             </Accordion>
