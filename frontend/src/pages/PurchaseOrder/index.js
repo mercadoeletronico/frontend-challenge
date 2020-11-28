@@ -34,8 +34,8 @@ export default function PurchaseOrder() {
           <div className="col-12">
             {addresses && (
               <Accordion title="Addresses">
-                {addresses.map((address, index) => (
-                  <div key={addresses[index]} className="col-12 col-md-4">
+                {addresses.map((address) => (
+                  <div key={Math.random()} className="col-12 col-md-4">
                     <CardAddresses addressInfo={address} />
                   </div>
                 ))}
