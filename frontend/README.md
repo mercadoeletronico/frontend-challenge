@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Documentação do desafio.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Olá avaliadores, irei guia-los a como instalar e executar o projeto.
+Tambem irei apresentar detalhadamente as tecnologias que utilizei e o porque.
 
-## Available Scripts
+## Instalação, execução, testes via scripts
 
-In the project directory, you can run:
+Dentro do diretório frontend execute os seguintes comandos:
 
-### `yarn start`
+# `yarn install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Esse comando irá instalar todas as dependencias do projeto em sua maquina.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## `yarn start`
 
-### `yarn test`
+Após a instalação das dependecias da aplição, rode mais esse comando, para a executar a aplicação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `yarn cypress`
 
-### `yarn build`
+Para rodar os testes desenvolvidos na aplicação, rode apenas esse comando que irá abrir uma nova interface, com as pastas onde se encontra as testes. Dentro dessa pasta podemos dar duplo click no arquivo de teste em que queremos rodar ou podemos rodar todos de uma vez.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias utilizadas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 1. Framework React JS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Escolhi essa framework, por ser a que domino.
 
-### `yarn eject`
+Falando em arquitetura de pastas, segui o que considero o mais ideal, todos os projetos que desenvolvo, separo bem as coisas, porque acho que fica melhor organizado, acredito que seja mais rapida a minha fixação tambem, caso precise criar um novo aquivo, ou buscar um que ja exista.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+No projeto para garantir a tipagem da minha variavel, utilizei a biblioteca prop-types, para garantir, que caso eu receba uma string onde se espere um numero isso seja mutavel.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 2. Eslint
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Para seguir um padrão de codigo, e identação, apliquei o eslint no projeto, visando garantir que tanto quem criou os outros desenvolvedores irão ter uma style guide pra seguir.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 3. Bootstrap
 
-## Learn More
+Para tratar resposividade, e maior agilidade na organização dos elementos em tela, usei a biblioteca do bootstrap, que me permite acelerar o desenvolvimento, pois atraves dela ja tenho breakpoints pré-definidos e outros alinhamentos como margin, pading, container, row ... que me permite ja ir montando tudo isso em tela, e estilizando via a propriedade className do item.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### 4. SCSS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+para criar a estilização da aplicação itilizei via Scss por ter um dominio mais, e que considero mais tranquilo tambem a questão de trabalhar com alguns conseitos de atomic design, organizei tambem dessa mesma maneira a pasta styles, dentro da mesma usei os arquivos separados por: global para aplicação, componentes, e dependencias.
 
-### Code Splitting
+##### 5. Axios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para realizar as requisições escolhi o axios, separei uma pasta services onde contem a minha baseUrl, e apenas na pagina que eu preciso eu disparo a requisição apenas do meu end-point, acredito que assim é mais organizado de se fazer.
 
-### Analyzing the Bundle Size
+###### 6. Moment JS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para tratar as datas e horas da aplicação optei por usar o momentjs por ja estar acostumado com a biblioteca, e familiarizado com suas respectivas funções.
