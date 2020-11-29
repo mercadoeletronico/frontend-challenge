@@ -7,11 +7,11 @@ Tambem irei apresentar detalhadamente as tecnologias que utilizei e o porque.
 
 Dentro do diretório frontend execute os seguintes comandos:
 
-# `yarn install`
+### `yarn install`
 
 Esse comando irá instalar todas as dependencias do projeto em sua maquina.
 
-## `yarn start`
+### `yarn start`
 
 Após a instalação das dependecias da aplição, rode mais esse comando, para a executar a aplicação
 
@@ -19,9 +19,9 @@ Após a instalação das dependecias da aplição, rode mais esse comando, para 
 
 Para rodar os testes desenvolvidos na aplicação, rode apenas esse comando que irá abrir uma nova interface, com as pastas onde se encontra as testes. Dentro dessa pasta podemos dar duplo click no arquivo de teste em que queremos rodar ou podemos rodar todos de uma vez.
 
-## Tecnologias utilizadas.
+# Tecnologias utilizadas.
 
-# 1. Framework React JS
+## 1. Framework React JS
 
 Escolhi essa framework, por ser a que domino.
 
@@ -33,19 +33,19 @@ No projeto para garantir a tipagem da minha variavel, utilizei a biblioteca prop
 
 Para tratar resposividade, e maior agilidade na organização dos elementos em tela, usei a biblioteca do bootstrap, que me permite acelerar o desenvolvimento, pois atraves dela ja tenho breakpoints pré-definidos e outros alinhamentos como margin, pading, container, row ... que me permite ja ir montando tudo isso em tela de forma mais dinamica, e estilizando via a propriedade className do item.
 
-### 3. SCSS
+## 3. SCSS
 
 para criar a estilização da aplicação utilizei Scss por ter um dominio maior, e que considero mais tranquilo tambem a questão de trabalhar com alguns conseitos de atomic design, organizei tambem dessa mesma maneira a pasta styles, onde usei os arquivos separados por: global para aplicação, componentes, e dependencias.
 
-#### 4. Axios
+## 4. Axios
 
 Para realizar as requisições escolhi o axios, separei em uma pasta services onde contem um arquivo com api com a minha baseUrl, e na pagina que eu preciso eu disparo a requisição apenas do meu end-point, acredito que assim é mais organizado de se fazer.
 
-##### 5. Moment JS
+## 5. Moment JS
 
 Para tratar as datas e horas da aplicação optei por usar o momentjs por ja estar acostumado com a biblioteca, e familiarizado com suas respectivas funções.
 
-###### 6. React-Icons
+## 6. React-Icons
 
 Utilizei a biblioteca react-icons, por ser um local onde se eu precisar utilizar icones do Font Awesome, Meterial Design, entre outros eu não precise importar cada uma delas para o projeto.
 
