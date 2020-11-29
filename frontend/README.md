@@ -25,26 +25,32 @@ Para rodar os testes desenvolvidos na aplicação, rode apenas esse comando que 
 
 Escolhi essa framework, por ser a que domino.
 
-Falando em arquitetura de pastas, segui o que considero o mais ideal, todos os projetos que desenvolvo, separo bem as coisas, porque acho que fica melhor organizado, acredito que seja mais rapida a minha fixação tambem, caso precise criar um novo aquivo, ou buscar um que ja exista.
+Falando em arquitetura de pastas, segui o que considero o mais ideal, todos os projetos que desenvolvo, separo bem as coisas, porque acho que fica melhor organizado, e acredito que seja mais rapida a minha fixação, caso precise criar um novo aquivo, ou buscar um que ja exista.
 
-No projeto para garantir a tipagem da minha variavel, utilizei a biblioteca prop-types, para garantir, que caso eu receba uma string onde se espere um numero isso seja mutavel.
+No projeto para garantir a tipagem da minha variavel, utilizei a biblioteca prop-types, para garantir, que caso eu receba uma string onde se espere um numero isso não seja mutavel.
 
-## 2. Eslint
+## 2. Bootstrap
 
-Para seguir um padrão de codigo, e identação, apliquei o eslint no projeto, visando garantir que tanto quem criou os outros desenvolvedores irão ter uma style guide pra seguir.
+Para tratar resposividade, e maior agilidade na organização dos elementos em tela, usei a biblioteca do bootstrap, que me permite acelerar o desenvolvimento, pois atraves dela ja tenho breakpoints pré-definidos e outros alinhamentos como margin, pading, container, row ... que me permite ja ir montando tudo isso em tela de forma mais dinamica, e estilizando via a propriedade className do item.
 
-### 3. Bootstrap
+### 3. SCSS
 
-Para tratar resposividade, e maior agilidade na organização dos elementos em tela, usei a biblioteca do bootstrap, que me permite acelerar o desenvolvimento, pois atraves dela ja tenho breakpoints pré-definidos e outros alinhamentos como margin, pading, container, row ... que me permite ja ir montando tudo isso em tela, e estilizando via a propriedade className do item.
+para criar a estilização da aplicação utilizei Scss por ter um dominio maior, e que considero mais tranquilo tambem a questão de trabalhar com alguns conseitos de atomic design, organizei tambem dessa mesma maneira a pasta styles, onde usei os arquivos separados por: global para aplicação, componentes, e dependencias.
 
-#### 4. SCSS
+#### 4. Axios
 
-para criar a estilização da aplicação itilizei via Scss por ter um dominio mais, e que considero mais tranquilo tambem a questão de trabalhar com alguns conseitos de atomic design, organizei tambem dessa mesma maneira a pasta styles, dentro da mesma usei os arquivos separados por: global para aplicação, componentes, e dependencias.
+Para realizar as requisições escolhi o axios, separei em uma pasta services onde contem um arquivo com api com a minha baseUrl, e na pagina que eu preciso eu disparo a requisição apenas do meu end-point, acredito que assim é mais organizado de se fazer.
 
-##### 5. Axios
-
-Para realizar as requisições escolhi o axios, separei uma pasta services onde contem a minha baseUrl, e apenas na pagina que eu preciso eu disparo a requisição apenas do meu end-point, acredito que assim é mais organizado de se fazer.
-
-###### 6. Moment JS
+##### 5. Moment JS
 
 Para tratar as datas e horas da aplicação optei por usar o momentjs por ja estar acostumado com a biblioteca, e familiarizado com suas respectivas funções.
+
+###### 6. React-Icons
+
+Utilizei a biblioteca react-icons, por ser um local onde se eu precisar utilizar icones do Font Awesome, Meterial Design, entre outros eu não precise importar cada uma delas para o projeto.
+
+OBS: Para tentar deixar o layout o mais fiel possivel e seguir com o padrão de codigo, vi que os icones do protótipo eram todos do Font Awsome, porem a lib do react-icons não tem os icones como outline então deixei os items com colocação mesmo.
+
+## Testes com Cypress
+
+Testes escrevi os testes com o cypress, para tentar me aproximar do dia a dia da empresa. Porem as validações que fiz, foi apenas dos components em UI, e o meu retorno do end-point.
