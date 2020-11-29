@@ -27,13 +27,13 @@ export default function Header({ headerInfo }) {
               <p cy-validation="header-contact-name" className="mr-xl-2">
                 <FaUsers
                   cy-validation="header-icon-users"
-                  className="icon-md mr-1"
+                  className="color-secundary icon-md mr-1"
                 />
                 {headerInfo.contact.name}
               </p>
               <FaInfoCircle
                 cy-validation="header-icon-info-circle"
-                className="icon-md"
+                className="color-secundary icon-md"
               />
             </div>
 
@@ -44,7 +44,7 @@ export default function Header({ headerInfo }) {
               >
                 <FaEnvelope
                   cy-validation="header-icon-email"
-                  className="icon-md mr-1"
+                  className="color-secundary icon-md mr-1"
                 />
                 {headerInfo.contact.email}
               </p>
@@ -55,7 +55,7 @@ export default function Header({ headerInfo }) {
                 >
                   <FaPhone
                     cy-validation="header-icon-phone"
-                    className="icon-md mr-1"
+                    className="color-secundary icon-md mr-1"
                   />
                   {headerInfo.contact.phone}
                 </p>
@@ -65,7 +65,7 @@ export default function Header({ headerInfo }) {
                 >
                   <FaFax
                     cy-validation="header-icon-fax"
-                    className="icon-md mr-1"
+                    className="color-secundary icon-md mr-1"
                   />
                   {headerInfo.contact.fax}
                 </p>
