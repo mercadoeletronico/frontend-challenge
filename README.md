@@ -1,4 +1,11 @@
-# testeme-marcosbrito
+<img src="me.svg" width="200" alt="ME">
+
+# Front-end Challenge
+
+Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end.
+
+
+<!-- # testeme-marcosbrito
 
 ## Project setup
 ```
@@ -21,4 +28,4 @@ yarn lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Configuration Reference](https://cli.vuejs.org/config/). -->
