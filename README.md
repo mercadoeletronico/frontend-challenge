@@ -3,7 +3,7 @@
 # Front-end Challenge
 
 Olá, 
-este é o teste para frontend feito por: Marcos Brito
+este é o teste para frontend feito por: **Marcos Brito**
 
 ## :zap: Instalação e Inicialização
 Para realizar a instalação, basta realizar o clone do repositório e installar as dependências do projeto através da linha de comando:
