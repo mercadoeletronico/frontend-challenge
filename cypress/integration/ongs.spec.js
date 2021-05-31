@@ -7,7 +7,8 @@ describe('API Testing', () => {
             cy.visit('http://localhost:8080/');
             expect(response).to.have.property('status', 200);
             expect(response.body).to.not.be.null;
-        })
+            cy.log(response.body.id);
+        });
     });
 
 });
