@@ -2,34 +2,42 @@
     <b-container>
         <b-row>
             <b-col>
-                <div class="cnt-box-shipto" >
-                    <!-- <p class="title-label" v-for="order of orders.addresses" :key="order.label">{{ order.label }}</p> -->
-                    <!-- <p class="title-label">Ship to</p> -->
-                    <p class="title-label">
-                        <span v-for="order in orders" :key="order.id">{{ order.label }}</span>
-                    </p>
+                <div class="cnt-box-shipto">
+
+                    <p class="title-label" v-for="order in shipto" :key="order.id">{{ order.label }}</p>
+
                     <p class="addresses-name">
-                        <span v-for="order in orders" :key="order.id">{{ order.name }} -</span>
-                        <span class="addresses-code" v-for="order in orders" :key="order.id">{{ order.code }}</span>
+                        <span v-for="order in shipto" :key="order.id">{{ order.name }} -</span>
+                        <span class="addresses-code" v-for="order in shipto" :key="order.id">({{ order.code || " " }})</span>
                     </p>
                     <div class="addresses-address">
-                        <span class="addresses-ico"><b-icon icon="geo-alt" font-scale="1" style="color:#003B71; margin-right: 4px;"></b-icon></span>
-                        <span v-for="order in orders" :key="order.id">{{ order.address }}</span>
+                        <b-row>
+                            <b-col cols="1" style="padding-right:0;"><b-icon icon="geo-alt" font-scale="1" style="color:#003B71;"></b-icon></b-col>
+                            <b-col style="padding-left:5px;"><span v-for="order in shipto" :key="order.id">{{ order.address }}</span></b-col>
+                        </b-row>
                     </div>
-                    <p class="addresses-person" >
-                        <span><b-icon icon="person" font-scale="1" style="color:#003B71; margin-right: 4px;"></b-icon></span>
-                        <span v-for="order in orders" :key="order.id">{{ order.contact.name }}</span>
-                    </p> 
-                    <p class="addresses-mail" >
-                        <span><b-icon icon="envelope" font-scale="1" style="color:#003B71; margin-right: 4px;"></b-icon></span>
-                        <span v-for="order in orders" :key="order.id">{{ order.contact.email }}</span>
-                    </p> 
-                    <p class="addresses-tel-fax" >
-                        <span><b-icon icon="telephone" font-scale="1" style="color:#003B71; margin-right: 4px;  -webkit-transform: scaleX(-1); transform: scaleX(-1);"></b-icon></span>
-                        <span v-for="order in orders" :key="order.id">{{ order.contact.phone }}  </span>
-                        <span><b-icon icon="file-earmark-break" font-scale="1" style="color:#003B71; margin-left: 10px; margin-right: 4px;"></b-icon></span>
-                        <span v-for="order in orders" :key="order.id">{{ order.contact.fax }}</span>
-                    </p> 
+                    <div class="addresses-person">
+                        <b-row>
+                            <b-col cols="1" style="padding-right:0;"><b-icon icon="person" font-scale="1"></b-icon></b-col>
+                            <b-col style="padding-left:5px;"><span v-for="order in shipto" :key="order.id">{{ order.contact.name }}</span></b-col>
+                        </b-row>
+                    </div>
+                    <div class="addresses-mail">
+                        <b-row>
+                            <b-col cols="1" style="padding-right:0;"><b-icon icon="envelope" font-scale="1" style="color:#003B71;"></b-icon></b-col>
+                            <b-col style="padding-left:5px;"><span v-for="order in shipto" :key="order.id">{{ order.contact.email }}</span></b-col>
+                        </b-row>
+                    </div>
+                    <div class="addresses-tel-fax">
+                        <b-row>
+                            <b-col cols="1" style="padding-right:0;"><b-icon icon="telephone" font-scale="1" style="color:#003B71; -webkit-transform: scaleX(-1); transform: scaleX(-1);"></b-icon></b-col>
+                            <b-col cols="4" style="padding-left:5px;"><span v-for="order in shipto" :key="order.id">{{ order.contact.phone }}</span></b-col>
+                            <b-col cols="1" style="padding-right:0;"><b-icon icon="file-earmark-break" font-scale="1" style="color:#003B71;"></b-icon></b-col>
+                            <b-col style="padding-left:5px;"><span v-for="order in shipto" :key="order.id">{{ order.contact.fax }}</span></b-col>
+                        </b-row>
+                    </div>
+
+
                 </div>
             </b-col>
         </b-row>   
@@ -40,17 +48,22 @@
     
     import Order from '../services/orders';
 
+    
+
     export default {
         data() {
             return {
-                orders: []
+                orders: [],
+                shipto: []
             }
         },
 
         mounted(){
             Order.listar().then(resposta => {
                 this.orders = resposta.data.addresses;
-                console.log(resposta.data.addresses[0].label);
+                this.shipto = this.orders.filter(lal => lal.label == 'Ship to').map(yep => yep);
+                //console.log(JSON.stringify(this.orders));
+                //console.log(JSON.stringify(this.shipto));
             });
         }
     }
@@ -96,15 +109,8 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 12px;
-        color: #000000;
-    }
-
-    .addresses-ico {
-        display: block;
-        float: left;
-        max-height: 110px;
-        margin-top: 0;
-        border: 1px solid #ffffff;
+        color: #00000080;
+        font-style: italic;
     }
 
     .addresses-address {
@@ -119,6 +125,7 @@
         font-weight: 400;
         font-size: 12px;
         color: #000000;
+        padding-top: 10px;
     }
 
     .addresses-mail {
@@ -126,6 +133,7 @@
         font-weight: 400;
         font-size: 12px;
         color: #000000;
+        padding-top: 10px;
     }
 
     .addresses-tel-fax {
@@ -133,56 +141,9 @@
         font-weight: 400;
         font-size: 12px;
         color: #000000;
+        padding-top: 10px;
     }
 
     /* --- */
-
-    .cnt-box-shipto .title-label span:nth-child(2){
-        display: none;
-    }
-    .cnt-box-shipto .title-label span:nth-child(3){
-        display: none;
-    }
-
-    .cnt-box-shipto .addresses-name span:nth-child(2){
-        display: none;
-    }
-    .cnt-box-shipto .addresses-name span:nth-child(3){
-        display: none;
-    }
-
-    .cnt-box-shipto .addresses-address span:nth-child(3){
-        display: none;
-    }
-    .cnt-box-shipto .addresses-address span:nth-child(4){
-        display: none;
-    }
-
-    .cnt-box-shipto .addresses-person span:nth-child(3){
-        display: none;
-    }
-    .cnt-box-shipto .addresses-person span:nth-child(4){
-        display: none;
-    }
-
-    .cnt-box-shipto .addresses-mail span:nth-child(3){
-        display: none;
-    }
-    .cnt-box-shipto .addresses-mail span:nth-child(4){
-        display: none;
-    }
-
-    .cnt-box-shipto .addresses-tel-fax span:nth-child(3){
-        display: none;
-    }
-    .cnt-box-shipto .addresses-tel-fax span:nth-child(4){
-        display: none;
-    }
-    .cnt-box-shipto .addresses-tel-fax span:nth-child(7){
-        display: none;
-    }
-    .cnt-box-shipto .addresses-tel-fax span:nth-child(8){
-        display: none;
-    }
 
 </style>

@@ -14,11 +14,11 @@
                         </span>
                     </p>
                     <b-row>
-                        <b-col fluid="sm">
+                        <b-col>
                             <p class="supplier-document-number" v-for="order of orders.supplier" :key="order.document">{{ order.value }}</p>
                             <p class="supplier-address" v-for="order of orders" :key="order.supplier">{{ order.address | truncate(55, '...') }}</p>
                         </b-col>
-                        <b-col fluid="sm">
+                        <b-col cols="5">
                             <p>
                                 <span><b-icon icon="person" font-scale="0.8" style="color:#003B71; margin-right: 4px;"></b-icon></span>
                                 <span class="supplier-document-number" v-for="order of orders.supplier" :key="order.contact">{{ order.name }}</span>
@@ -31,7 +31,7 @@
                                 <span class="supplier-contact-name-phone-fax" v-for="order of orders.supplier" :key="order.contact" title="Fax">{{ order.fax }}</span>
                             </p>
                         </b-col>
-                        <b-col fluid="sm">
+                        <b-col>
                             <p>
                                 <span><b-icon icon="eye" font-scale="0.8" style="color:#003B71; margin-right: 4px;"></b-icon></span>
                                 <span class="supplier-read-reply">Read: </span>
