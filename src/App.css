@@ -1,0 +1,339 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.page .container {
+  width: 1138px;
+  height: 536px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  box-shadow: 0 1px 8px 1px rgb(0 0 0 / 8%);
+  border-radius: 10px;
+  /* border: 1px solid black;*/
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.Header {
+  margin: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchases {
+  margin-top: 10px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px 15px;
+  height: 90px;
+  width: 200px;
+  color: white;
+  font-size: 17px;
+  background-color: #0080b1;
+  white-space: nowrap;
+  position: relative;
+  line-height: 20px;
+}
+
+.Header .purchases .purchase {
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.Header .purchase .number {
+  margin: 0;
+  font-weight: 22px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.Header .purchase .code {
+  margin: 0;
+  font-weight: bold;
+  padding: 0;
+}
+
+.container-data {
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+  line-height: 10px;
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+}
+
+.container-data .buyer {
+  padding-left: 25px;
+  font-size: 12px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.buyer-email {
+  display: block;
+  margin: 0;
+}
+
+.buyer-email a {
+  color: #0080b1;
+}
+
+.container-data .order {
+  padding-right: 10px;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.container-data .order h1 {
+  font-size: 24px;
+  margin: 0px 0 10px 0;
+}
+
+.container-data .order .status {
+  color: orange;
+}
+
+.supplier {
+  width: 1098px;
+  height: 112px;
+  margin: 20px 20px 40px 20px;
+  /*border: 1px solid black;*/
+  box-shadow: 0 1px 8px 1px rgb(0 0 0 / 8%);
+  font-size: 10px;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 20px;
+}
+
+.supplier h3 {
+  color: rgba(128, 128, 128, 0.438);
+  margin: 0;
+}
+
+.supplier .supplier-data {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.supplier .supplier-name {
+  margin: 0;
+  color: #0080b1;
+}
+
+.supplier .supplier-code {
+  background-color: rgba(0, 128, 177, 0.12);
+  color: #8A8A8A;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.supplier .supplier-inf {
+  display: flex;
+  font-size: 12px;
+  color: #000000 87%;
+  ;
+}
+
+.supplier-contact {
+  margin-left: 100px;
+  color: #000000;
+}
+
+.supplier-contact i {
+  margin-right: 5px;
+  color: gray;
+}
+
+.supplier-log {
+  margin-left: 90px;
+}
+
+.supplier-log p {
+  margin: 0;
+}
+
+.supplier-log i {
+  margin-right: 5px;
+  color: gray;
+}
+
+.container-address {
+  margin-left: 20px;
+}
+
+.container-address h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.container-address h2 i {
+  margin-right: 5px;
+  color: #0A8CCC;
+  background-color: #ebeff0;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.content-address {
+  display: flex;
+}
+
+.address-ship {
+  background-color: white;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 10px 15px;
+  display: flex;
+}
+
+.address-shipname {
+  box-shadow: 0 1px 8px 1px rgb(0 0 0 / 8%);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.address-shipname h3 {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.address-shipname h1 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.nameaAddress {
+  padding-left: 15px;
+  line-height: 2px;
+  color: rgba(0, 0, 0, 0.404);
+}
+
+.nameaAddress i {
+  margin-right: 2px;
+  margin-left: 10px;
+}
+
+.nameaAddress h4 {
+  margin: 0;
+  line-height: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.nameaAddress h5 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.address-bill {
+  margin: 0;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.address-billname {
+  box-shadow: 0 1px 8px 1px rgb(0 0 0 / 8%);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.address-billname h1 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.address-billname h3 {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.address-chargename {
+  box-shadow: 0 1px 8px 1px rgb(0 0 0 / 8%);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.address-chargename h1 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.address-chargename h3 {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.buyer-name {
+  margin: 0;
+}
+
+.buyer-name i {
+  margin-right: 5px;
+  color: gray;
+}
+
+.buyer-email a i {
+  color: gray;
+  margin-right: 5px;
+}
+
+.buyer h1 {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.buyer-phone i {
+  margin-right: 5px;
+}
+
+/*Responsivo*/
+
+@media only screen and (max-device-width: 900px) {
+  .Header {
+    width: 600px;
+  }
+  .supplier {
+    width: 600px;
+    height: 140px;
+    font-size: 12px;
+    padding-bottom: 25px;
+  }
+  .address-ship {
+    display: block;
+  }
+  .page .container {
+    height: auto;
+  }
+  .address-bill {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .address-shipname {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}

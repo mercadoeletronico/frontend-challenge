@@ -1,39 +1,52 @@
-<img src="me.svg" width="200" alt="ME">
+# Front-End Challenge by Mercado Eletronico
 
-# Front-end Challenge
+<!-- ME LOGO -->
+<br />
+<p align="center">
+  <a href="https://blog.me.com.br/?utm_source=adwords&utm_medium=ppc&utm_campaign=%5BINSTITUCIONAL%5D%20SEARCH%20%7C%20FIXA&utm_term=mercado%20eletronico&hsa_acc=7066469600&hsa_cam=2047043518&hsa_grp=76035078407&hsa_ad=432750171038&hsa_src=g&hsa_tgt=kwd-332391521930&hsa_kw=mercado%20eletronico&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjw5auGBhDEARIsAFyNm9G1eZHF_EcUzFj-6z6yFCPbsV6W1GZHTOR_yluJzeT1SY4mFLLyoBcaAoyaEALw_wcB">
+    <img src="src/img/me.svg" width="200" alt="ME">
+  </a>
 
-Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end.
+  <h3 align="center">Mercado Eletronico</h3>
+</p>
 
-## :zap: O Desafio
-Seu objetivo é criar um App contendo a página de detalhes do processo baseado no layout proposto.
+## Sobre o Projeto
 
-Para acessar o layout
+Esse projeto foi criado com o framework React, para o challenge do Mercado
+Eletronico, apresentado a tela de Pedido com os dados de uma API.
 
-1. Acesse o link [https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362](https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362).
-2. Caso tenha algum problema ou dúvida na visualização do sketch favor nos avisar.
 
-Os dados apresentados pela página deverão ser consumidos através da seguinte API.
+### Como inicializar?
 
-> GET https://me-frontend-challenge-api.herokuapp.com/orders/1
+Primeiro, é necessario ter o Node instalado [Node](https://nodejs.org/en/)
 
-## :clipboard: Requisitos
 
-### Requisitos obrigatórios
-* Documentação
-  * Instruções de instalação e inicialização
-  * Descrição sobre as tecnologias utilizadas no projeto
-* Design responsivo
+Faça um clone do repositori com o comando abaixo::
+### `git clone https://github.com/Jefferson-W/frontend-challenge`
 
-### Você pode
-* Utilizar qualquer framework JS moderno (React, Vue, Svelte...)
-* Alterar a proposta do layout caso necessário - você terá que nos explicar o porque das mudanças!
+Para instalar as dependências use :
+### `npm install`
 
-### O que gostaríamos de ver
-* Uma arquitetura consistente, focada na simplicidade do projeto (**keep it simple!**)
-* Testes unitários, e2e e/ou coverage (testes são parte importante do desenvolvimento; você pode utilizar Jest, Cypress, Mocha, Istanbul, Chai...)
+Agora, basta digitar o comando abaixo, para rodar no localhost:3000
+### `npm start`
 
-## :rocket: Entrega
-Para enviar seu código, você pode:
+Abra seu browser e acesse o link abaixo:
+[http://localhost:3000](http://localhost:3000)
 
-* Enviar a URL do seu repositório no GitHub para o(a) Recrutador(a)
-* Fazer um fork deste repositório, criar uma branch com o seu nome e enviar um pull request
+### Visual do Projeto finalizado
+
+<br />
+<p align="center">
+    <img src="src/img/projeto.png" width="500" alt="ME">
+    </p>
+
+
+### Feito Com
+
+Abaixo segue o que foi utilizado na criação do projeto:
+
+- [React](https://pt-br.reactjs.org/) - O React JS é um framework que permite o desenvolvimento de aplicações  utilizando Javascript;
+
+- [Cypress](https://www.cypress.io/) - O Cypress é um framework de testes automatizados end-to-end também usando JavaScript;
+
+- [Fetch](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch) - Para utilizar a API foi utilizado o método fetch(). Ele retorna uma promessa. Se a promessa retornada for resolve , a função dentro do método then() é executada. Essa função contém o código para lidar com os dados recebidos da API.
