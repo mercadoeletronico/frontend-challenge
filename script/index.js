@@ -1,10 +1,18 @@
 var app = new Vue({
-  el: '#header',
+  el: '#app',
 
   data () {
     return {
-      infoHeader: null,
-      infoHeaderContact: null
+      infoHeader: null
+    }
+  },
+
+  methods: {
+    date: function (date) {
+      return moment(date).format('DD/MM/YYYY');
+    },
+    dateHour: function (date) {
+      return moment(date).format('DD/MM/YYYY, h:mm');
     }
   },
 
