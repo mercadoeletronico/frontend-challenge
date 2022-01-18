@@ -6,10 +6,14 @@ body {
   #header {
     .blue-tag {
       background-color: rgb(197, 197, 255);
-      p {
-        border: 1px solid blue;
-        height: 20px;
-      }
+    }
+
+    .contact {
+      background-color: blueviolet;
+    }
+
+    .section-header {
+      background-color: cadetblue;
     }
   }
 }

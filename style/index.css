@@ -10,8 +10,11 @@ body #header .blue-tag {
   background-color: #c5c5ff;
 }
 
-body #header .blue-tag p {
-  border: 1px solid blue;
-  height: 20px;
+body #header .contact {
+  background-color: blueviolet;
+}
+
+body #header .section-header {
+  background-color: cadetblue;
 }
 /*# sourceMappingURL=index.css.map */
