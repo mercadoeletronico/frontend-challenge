@@ -1,4 +1,17 @@
 body {
-  background: gray;
+  background: #f3f3f3;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #header .blue-tag {
+  background-color: #c5c5ff;
+}
+
+body #header .blue-tag p {
+  border: 1px solid blue;
+  height: 20px;
 }
 /*# sourceMappingURL=index.css.map */
