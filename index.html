@@ -9,19 +9,28 @@
   <body>
 
   <!-- HEADER -->
-  <div id="header">
+
+  <header id="header">
     <div class="blue-tag">
       <h2>Purchase Order</h2>
       <p>{{ infoHeader.header.number }}</p>
       <p>{{ infoHeader.header.serial }}</p>
     </div>
 
-    <p>{{ infoHeader.header.buyer }}</p>
-    <p>{{ infoHeader.header.price }}</p>
-    <p>{{ infoHeader.header.currency }}</p>
-    <p>{{ infoHeader.header.createdAt }}</p>
-    <p>{{ infoHeader.header.status }}</p>
-  </div>
+    <div class="contact">
+      <p>{{ infoHeader.header.buyer }}</p>
+      <p>{{ infoHeader.header.contact.name }}</p>
+      <p>{{ infoHeader.header.contact.email }}</p>
+      <p>{{ infoHeader.header.contact.phone }}</p>
+      <p>{{ infoHeader.header.contact.fax }}</p>
+    </div>
+
+    <div class="section-header">
+      <p>{{ infoHeader.header.currency }} {{ infoHeader.header.price}}</p>
+      <p>{{ infoHeader.header.status }}</p>
+      <p>Created on {{ infoHeader.header.createdAt }}</p>
+    </div>
+  </header>
 
   <script src="./script/index.js"></script>
   </body>
