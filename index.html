@@ -2,35 +2,60 @@
   <head>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style/index.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
+
   <body>
+    <div id="app">
+      <!-- HEADER -->
+      <header>
+        <div class="blue-tag">
+          <h2>Purchase Order</h2>
+          <p>{{ infoHeader.header.number }}</p>
+          <p>{{ infoHeader.header.serial }}</p>
+        </div>
+        <div class="contact">
+          <p>{{ infoHeader.header.buyer }}</p>
+          <p>{{ infoHeader.header.contact.name }}</p>
+          <p>{{ infoHeader.header.contact.email }} {{ infoHeader.header.contact.phone }} {{ infoHeader.header.contact.fax }}</p>
+        </div>
+        <div class="section-header">
+          <p>{{ infoHeader.header.currency }} {{ infoHeader.header.price}}</p>
+          <p>{{ infoHeader.header.status }}</p>
+          <p>Created on {{ date(infoHeader.header.createdAt) }}</p>
+        </div>
+      </header>
 
-  <!-- HEADER -->
+      <!-- SECTION SUPPLIER -->
+      <section class="section-supplier">
+        <div class="supplier-address">
+          <p>Supplier</p>
+          <p>{{ infoHeader.supplier.name }} {{ infoHeader.supplier.code }}</p>
+          <p>{{ infoHeader.supplier.document.value }}</p>
+          <p>{{ infoHeader.supplier.address }}</p>
+        </div>
+        <div class="supplier-contact">
+          <p>{{ infoHeader.supplier.contact.name }} - {{ infoHeader.supplier.contact.email }}</p>
+          <p>{{ infoHeader.supplier.contact.phone }} {{ infoHeader.supplier.contact.fax }}</p>
+        </div>
+        <div class="supplier-right">
+          <p>Read: {{ dateHour(infoHeader.header.readAt) }}</p>
+          <p>Last Reply: {{ dateHour(infoHeader.header.lastReplyAt) }}</p>
+        </div>
+      </section>
 
-  <header id="header">
-    <div class="blue-tag">
-      <h2>Purchase Order</h2>
-      <p>{{ infoHeader.header.number }}</p>
-      <p>{{ infoHeader.header.serial }}</p>
+      <!-- FOOTER
+      <footer>
+        <div v-for="address in addresses" :key="address">
+          <p>{{ address.name }}</p>
+        </div>
+        <p>Teste do footer</p>
+      </footer> -->
+
     </div>
-
-    <div class="contact">
-      <p>{{ infoHeader.header.buyer }}</p>
-      <p>{{ infoHeader.header.contact.name }}</p>
-      <p>{{ infoHeader.header.contact.email }}</p>
-      <p>{{ infoHeader.header.contact.phone }}</p>
-      <p>{{ infoHeader.header.contact.fax }}</p>
-    </div>
-
-    <div class="section-header">
-      <p>{{ infoHeader.header.currency }} {{ infoHeader.header.price}}</p>
-      <p>{{ infoHeader.header.status }}</p>
-      <p>Created on {{ infoHeader.header.createdAt }}</p>
-    </div>
-  </header>
 
   <script src="./script/index.js"></script>
   </body>
