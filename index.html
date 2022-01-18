@@ -7,9 +7,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
+
+  <!-- HEADER -->
   <div id="header">
-    {{ message }}
+    <div class="blue-tag">
+      <h2>Purchase Order</h2>
+      <p>{{ infoHeader.header.number }}</p>
+      <p>{{ infoHeader.header.serial }}</p>
+    </div>
+
+    <p>{{ infoHeader.header.buyer }}</p>
+    <p>{{ infoHeader.header.price }}</p>
+    <p>{{ infoHeader.header.currency }}</p>
+    <p>{{ infoHeader.header.createdAt }}</p>
+    <p>{{ infoHeader.header.status }}</p>
   </div>
+
   <script src="./script/index.js"></script>
   </body>
 </html>
