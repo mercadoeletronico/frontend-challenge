@@ -47,13 +47,18 @@
         </div>
       </section>
 
-      <!-- FOOTER
+      <!-- FOOTER -->
       <footer>
-        <div v-for="address in addresses" :key="address">
-          <p>{{ address.name }}</p>
+        <div v-for="count in infoHeader" :key="count">
+          <!-- <div v-for="addresses in addresses" :key="addresses"> -->
+            <h2>{{ count }}</h2>
+            <!-- <h3>{{ addresses.name }} {{ addresses.code }}</h3>
+            <p>{{ addresses.address }}</p> -->
+            <!-- <p>{{ addresses.contact.name }}</p> -->
+            <!-- <p>{{ addresses.contact.phone }} {{ addresses.contact.fax }}</p> -->
+          <!-- </div> -->
         </div>
-        <p>Teste do footer</p>
-      </footer> -->
+      </footer>
 
     </div>
 

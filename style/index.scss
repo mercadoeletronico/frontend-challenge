@@ -27,8 +27,11 @@ body {
       border: 2px solid blue;
     }
   }
-  
+
   footer {
     background-color: rgb(184, 11, 112);
+    h2 {
+      background-color: darkgreen;
+    }
   }
 }

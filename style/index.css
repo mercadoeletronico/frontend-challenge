@@ -33,4 +33,8 @@ body .section-supplier .supplier-contact {
 body footer {
   background-color: #b80b70;
 }
+
+body footer h2 {
+  background-color: darkgreen;
+}
 /*# sourceMappingURL=index.css.map */
