@@ -5,36 +5,4 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-body header .blue-tag {
-  background-color: #c5c5ff;
-}
-
-body header .contact {
-  background-color: blueviolet;
-}
-
-body header .section-header {
-  background-color: cadetblue;
-}
-
-body .section-supplier {
-  background-color: #fff2af;
-}
-
-body .section-supplier .supplier-address {
-  border: 2px solid red;
-}
-
-body .section-supplier .supplier-contact {
-  border: 2px solid blue;
-}
-
-body footer {
-  background-color: #b80b70;
-}
-
-body footer h2 {
-  background-color: darkgreen;
-}
 /*# sourceMappingURL=index.css.map */
