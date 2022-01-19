@@ -1,34 +1,101 @@
+$color-body: #FFFFFF;
+$color-blue: #0A8CCC;
+$color-blue-tag: #0A8CCC;
+$color-status-orange: #F5A623;
+$color-title: #000000;
+$color-subtitle: #919191;
+
 body {
-  background: rgb(243, 243, 243);
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  background-color: $color-body;
+  font-family: 'Open Sans', sans-serif;
 
-  header {
-    // .blue-tag {
-    //   background-color: rgb(197, 197, 255);
-    // }
+  /* Mobile only */
+  @media (min-width: 0px) and (max-width:425px) {
+    #app {
+      margin: 0% 7%;
+      header {
+        // background-color: yellowgreen;
+        .tag {
+          display: inline-flex;
+          flex-direction: row;
 
-    // .contact {
-    //   background-color: blueviolet;
-    // }
-
-    // .section-header {
-    //   background-color: cadetblue;
-    // }
+          width: 100%;
+          .blue-tag {
+            padding: 8px 50px 20px 50px;
+            margin-left: -40px;
+            width: 50%;
+            border-bottom-right-radius: 30px;
+            .title-tag {
+              font-size: 1.2rem;
+              margin: 3px 0px;
+            }
+            .number {
+              font-size: 1.5rem;
+              font-weight: 700;
+              margin: 0px;
+            }
+            .serial {
+              font-size: 0.9rem;
+              font-weight: 700;
+              margin: 3px 0px 0px;
+              font-style: italic;
+            }
+          }
+          .img-logo { 
+            margin: auto;
+            margin-left: -15%
+          }
+        }
+        
+      }
+    }
   }
 
-  // .section-supplier {
-  //   background-color: rgb(255, 242, 175);
-  //   .supplier-address {
-  //     border: 2px solid red;
-  //   }
-  //   .supplier-contact {
-  //     border: 2px solid blue;
-  //   }
-  // }
-
-  footer {
-    // background-color: rgb(246, 137, 201);
+  @media (min-width: 321px) and (max-width:425px) { 
+    #app {
+      header {
+        .tag {
+          .img-logo {
+            margin-left: -14%;
+          }
+        }
+      }
+    }
   }
+  
+   /*Tablet only */
+  @media (min-width: 426px) and (max-width: 768px) {
+    #app {
+      background-color: $color-status-orange;
+    }
+  }
+
+  /*laptop only */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #app {
+      background-color: greenyellow;
+    }
+  }
+
+  /*desktop up */
+  @media (min-width: 1025px) {
+    #app {
+      background-color: pink;
+    }
+  }
+
+  /* ALL STYLES */
+
+  #app {
+    header {
+      .blue-tag {
+        background-color: $color-blue-tag;
+        color: $color-body;
+      }
+    }
+  }
+
 }

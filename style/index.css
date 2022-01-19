@@ -1,8 +1,84 @@
 body {
-  background: #f3f3f3;
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  /* Mobile only */
+  /*Tablet only */
+  /*laptop only */
+  /*desktop up */
+  /* ALL STYLES */
+}
+
+@media (min-width: 0px) and (max-width: 425px) {
+  body #app {
+    margin: 0% 7%;
+  }
+  body #app header .tag {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  body #app header .tag .blue-tag {
+    padding: 8px 50px 20px 50px;
+    margin-left: -40px;
+    width: 50%;
+    border-bottom-right-radius: 30px;
+  }
+  body #app header .tag .blue-tag .title-tag {
+    font-size: 1.2rem;
+    margin: 3px 0px;
+  }
+  body #app header .tag .blue-tag .number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0px;
+  }
+  body #app header .tag .blue-tag .serial {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 3px 0px 0px;
+    font-style: italic;
+  }
+  body #app header .tag .img-logo {
+    margin: auto;
+    margin-left: -15%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+  body #app header .tag .img-logo {
+    margin-left: -14%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  body #app {
+    background-color: #F5A623;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body #app {
+    background-color: greenyellow;
+  }
+}
+
+@media (min-width: 1025px) {
+  body #app {
+    background-color: pink;
+  }
+}
+
+body #app header .blue-tag {
+  background-color: #0A8CCC;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=index.css.map */
