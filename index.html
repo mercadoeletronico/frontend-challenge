@@ -47,20 +47,38 @@
         </div>
       </section>
 
-      <!-- FOOTER -->
       <footer>
-        <div v-for="count in infoHeader" :key="count">
-          <!-- <div v-for="addresses in addresses" :key="addresses"> -->
-            <h2>{{ count }}</h2>
-            <!-- <h3>{{ addresses.name }} {{ addresses.code }}</h3>
-            <p>{{ addresses.address }}</p> -->
-            <!-- <p>{{ addresses.contact.name }}</p> -->
-            <!-- <p>{{ addresses.contact.phone }} {{ addresses.contact.fax }}</p> -->
-          <!-- </div> -->
+        <div class="ship-to">
+          <h2> {{ infoHeader.addresses[0].label }}</h2>
+          <h3>{{ infoHeader.addresses[0].name }} - <span class="addresses-code">{{ infoHeader.addresses[0].code }}</span></h3>
+          <p>{{ infoHeader.addresses[0].address }}</p>
+          <p>{{ infoHeader.addresses[0].contact.name }}</p>
+          <p>{{ infoHeader.addresses[0].contact.email }}</p>
+          <p>{{ infoHeader.addresses[0].contact.phone }} {{ infoHeader.addresses[0].contact.fax }}</p>
+        </div>
+        <div class="bill-to">
+          <h2> {{ infoHeader.addresses[1].label }}</h2>
+          <h3>{{ infoHeader.addresses[1].name }} - <span class="addresses-code">{{ infoHeader.addresses[1].code }}</span></h3>
+          <p>{{ infoHeader.addresses[1].address }}</p>
+          <p>{{ infoHeader.addresses[1].contact.name }}</p>
+          <p>{{ infoHeader.addresses[1].contact.email }}</p>
+          <p>{{ infoHeader.addresses[1].contact.phone }} {{ infoHeader.addresses[1].contact.fax }}</p>
+        </div>
+        <div class="charge-to">
+          <h2> {{ infoHeader.addresses[2].label }}</h2>
+          <h3>{{ infoHeader.addresses[2].name }} - <span class="addresses-code">{{ infoHeader.addresses[2].code }}</span></h3>
+          <p>{{ infoHeader.addresses[2].address }}</p>
+          <p>{{ infoHeader.addresses[2].contact.name }}</p>
+          <p>{{ infoHeader.addresses[2].contact.email }}</p>
+          <p>{{ infoHeader.addresses[2].contact.phone }} {{ infoHeader.addresses[2].contact.fax }}</p>
         </div>
       </footer>
 
+
+
     </div>
+
+  </div>
 
   <script src="./script/index.js"></script>
   </body>
