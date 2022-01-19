@@ -51,6 +51,39 @@ body {
     margin: auto;
     margin-left: -15%;
   }
+  body #app header .contact {
+    margin-top: 20px;
+  }
+  body #app header .contact p {
+    font-size: 0.8rem;
+    margin: 5px 0px;
+    padding: 0px;
+    margin: auto;
+  }
+  body #app header .contact .title {
+    font-weight: 600;
+    font-size: 1.0rem;
+    margin-bottom: 5px 10px;
+  }
+  body #app header .section-header {
+    padding-top: 10px;
+  }
+  body #app header .section-header .title {
+    font-weight: 600;
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  body #app header .section-header .status {
+    color: #F5A623;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 3px 0px;
+  }
+  body #app header .section-header p {
+    margin-top: 0px;
+    font-size: 0.7rem;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 425px) {
@@ -80,5 +113,12 @@ body {
 body #app header .blue-tag {
   background-color: #0A8CCC;
   color: #FFFFFF;
+}
+
+body #app header .contact .material-icons {
+  vertical-align: middle;
+  font-size: 14px;
+  color: #0A8CCC;
+  padding: 5px;
 }
 /*# sourceMappingURL=index.css.map */

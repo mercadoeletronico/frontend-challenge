@@ -12,7 +12,6 @@
   <body>
     <div id="app">
       <!-- HEADER -->
-      <!-- <span class="material-icons">account_circle</span> -->
       <header>
         <div class="tag">
           <div class="blue-tag">
@@ -29,13 +28,15 @@
           </div>
         </div>
         <div class="contact">
-          <p>{{ infoHeader.header.buyer }}</p>
-          <p>{{ infoHeader.header.contact.name }}</p>
-          <p>{{ infoHeader.header.contact.email }} {{ infoHeader.header.contact.phone }} {{ infoHeader.header.contact.fax }}</p>
+          <p class="title">{{ infoHeader.header.buyer }}</p>
+          <p><span class="material-icons">groups</span>{{ infoHeader.header.contact.name }}<span class="material-icons">info</span></p>
+          <p><span class="material-icons">mail</span>{{ infoHeader.header.contact.email }}</p>
+          <p><span class="material-icons">call</span>{{ infoHeader.header.contact.phone }}</p>
+          <p><span class="material-icons">fax</span>{{ infoHeader.header.contact.fax }}</p>
         </div>
         <div class="section-header">
-          <p>{{ infoHeader.header.currency }} {{ infoHeader.header.price}}</p>
-          <p>{{ infoHeader.header.status }}</p>
+          <p class="title">{{ infoHeader.header.currency }} {{ infoHeader.header.price}}</p>
+          <p class="status">{{ infoHeader.header.status }}</p>
           <p>Created on {{ date(infoHeader.header.createdAt) }}</p>
         </div>
       </header>
@@ -84,13 +85,8 @@
           <p>{{ infoHeader.addresses[2].contact.phone }} {{ infoHeader.addresses[2].contact.fax }}</p>
         </div>
       </footer>
-
-
-
     </div>
-
   </div>
-
   <script src="./script/index.js"></script>
   </body>
 </html>

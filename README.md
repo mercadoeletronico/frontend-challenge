@@ -37,3 +37,9 @@ Para enviar seu código, você pode:
 
 * Enviar a URL do seu repositório no GitHub para o(a) Recrutador(a)
 * Fazer um fork deste repositório, criar uma branch com o seu nome e enviar um pull request
+
+
+material icon:
+https://google.github.io/material-design-icons/
+
+https://fonts.google.com/icons?selected=Material+Icons
