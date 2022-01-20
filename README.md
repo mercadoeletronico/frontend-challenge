@@ -9,7 +9,7 @@ App contendo a página de detalhes do processo baseado no layout: link [https://
 
 ## 👁‍🗨 Confira o resultado
 
-Link da página com deploy no gitHubPages [https://pamelaotero.github.io/frontend-challenge/]()
+Link da página com deploy no gitHubPages [https://pamelaotero.github.io/frontend-challenge/](https://pamelaotero.github.io/frontend-challenge/)
 
 Obs: teste-o no seu celular também!
 
