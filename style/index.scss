@@ -94,64 +94,71 @@ body {
   // laptop UP
   @media (min-width: 769px) {
     #app {
-      border: 1px solid red;
       margin: 0px 3%;
       header {
-        border: 2px solid red;
+        .container-right {
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          div {
+            height: auto;
+            padding: 0;
+            width: calc(40% - 70px);
+          }
+        }
         .tag {
+          position: absolute;
           display: inline-flex;
           width: 300px;
-          // border: 1px solid green;
+          margin-top: 25px;
           .blue-tag {
-            // border: 2px solid red;
             padding: 8px 50px 20px 100px;
             margin-left: -80px;
             width: 200px;
-            border-bottom-right-radius: 30px;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
           }
           .img-logo { 
-            // border: 2px solid red;
             margin: auto;
             margin-left: -40px;
           }
         }
         .contact {
-          margin-top: 10px;
           .title {
             padding-bottom: 0px;
             padding-top: 0px;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.9rem;
+            margin: 0px;
           }
         }
         .section-header {
           padding-top: 10px;
+          text-align: right;
           .title {
             font-weight: 600;
-            font-size: 1.0rem;
-            margin-bottom: 10px;
+            font-size: 1.9rem;
             margin-bottom: 0px;
+            margin-top: 13px;
           }
           .status {
             color: $color-status-orange;
             font-weight: 600;
-            font-size: 14px;
-            margin: 3px 0px;
+            font-size: 1.3em;
+            margin: 20px 0px;
           }
           p {
             margin-top: 0px;
-            font-size: 0.7rem;
+            font-size: 0.9rem;
           }
         }
       }
       section {
-        // border: 1px solid red;
         .grid-supplier {
           display: grid;
           justify-content: center;
           gap: 5px;
           grid-template-columns: 1fr 1fr 1fr;
-          // border: 1px solid rgb(17, 16, 2);
           #container-supplier-right {
             text-align: right;
           }
@@ -168,8 +175,8 @@ body {
 
     }
   }
-  /* ALL */
 
+  /* Styles ALL */
   #app {
     .material-icons {
       vertical-align: middle;

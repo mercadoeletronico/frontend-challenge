@@ -6,7 +6,7 @@ body {
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   /* Mobile and tabley only */
-  /* ALL */
+  /* Styles ALL */
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -99,55 +99,70 @@ body {
 
 @media (min-width: 769px) {
   body #app {
-    border: 1px solid red;
     margin: 0px 3%;
   }
-  body #app header {
-    border: 2px solid red;
+  body #app header .container-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  body #app header .container-right div {
+    height: auto;
+    padding: 0;
+    width: calc(40% - 70px);
   }
   body #app header .tag {
+    position: absolute;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: 300px;
+    margin-top: 25px;
   }
   body #app header .tag .blue-tag {
     padding: 8px 50px 20px 100px;
     margin-left: -80px;
     width: 200px;
-    border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
   }
   body #app header .tag .img-logo {
     margin: auto;
     margin-left: -40px;
   }
-  body #app header .contact {
-    margin-top: 10px;
-  }
   body #app header .contact .title {
     padding-bottom: 0px;
     padding-top: 0px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.9rem;
+    margin: 0px;
   }
   body #app header .section-header {
     padding-top: 10px;
+    text-align: right;
   }
   body #app header .section-header .title {
     font-weight: 600;
-    font-size: 1.0rem;
-    margin-bottom: 10px;
+    font-size: 1.9rem;
     margin-bottom: 0px;
+    margin-top: 13px;
   }
   body #app header .section-header .status {
     color: #F5A623;
     font-weight: 600;
-    font-size: 14px;
-    margin: 3px 0px;
+    font-size: 1.3em;
+    margin: 20px 0px;
   }
   body #app header .section-header p {
     margin-top: 0px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   body #app section .grid-supplier {
     display: -ms-grid;
