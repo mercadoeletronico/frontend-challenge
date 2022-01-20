@@ -7,13 +7,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   /* Mobile only */
   /*Tablet only */
-  /*laptop only */
-  /*laptop up*/
-  /*desktop up */
   /* ALL STYLES */
 }
 
-@media (min-width: 0px) and (max-width: 425px) {
+@media (min-width: 0px) and (max-width: 500px) {
   body #app {
     margin: 0% 7%;
   }
@@ -22,7 +19,6 @@ body {
     padding: 0px;
     margin: auto;
     padding: 3px 3px;
-    border: 1px solid red;
   }
   body #app header {
     display: -webkit-box;
@@ -65,11 +61,11 @@ body {
     margin-left: -15%;
   }
   body #app header .contact {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   body #app header .contact .title {
-    padding-bottom: px;
-    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     font-weight: 600;
     font-size: 1.1rem;
   }
@@ -93,7 +89,6 @@ body {
     font-size: 0.7rem;
   }
   body #app .section-supplier {
-    border: 2px solid blue;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -101,6 +96,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  body #app .section-supplier .supplier-address .title-supplier {
+    color: #919191;
+    margin: 0;
+    padding-top: 10px;
   }
   body #app footer {
     border: 2px solid rebeccapurple;
@@ -120,22 +120,17 @@ body {
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
   body #app {
     background-color: #F5A623;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  body #app {
-    background-color: greenyellow;
-  }
-}
-
-@media (min-width: 769px) {
-  body #app {
-    background-color: black;
-  }
+body #app .material-icons {
+  vertical-align: middle;
+  font-size: 14px;
+  padding: 5px 5px 5px 0px;
+  color: #919191;
 }
 
 body #app header .blue-tag {
@@ -143,10 +138,63 @@ body #app header .blue-tag {
   color: #FFFFFF;
 }
 
-body #app header .contact .material-icons {
-  vertical-align: middle;
-  font-size: 14px;
+body #app header .contact #icon-header {
   color: #0A8CCC;
-  padding: 5px 5px 5px 0px;
+}
+
+body #app .section-supplier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #app .section-supplier .supplier-address .title-supplier {
+  color: #919191;
+  margin: 0;
+}
+
+body #app .section-supplier .supplier-address .subtitle-supplier {
+  font-weight: bold;
+  color: #0A8CCC;
+  margin-top: 8px;
+}
+
+body #app .section-supplier .supplier-address .code-supplier {
+  background-color: #73cefca8;
+  color: #8A8A8A;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+body #app footer .title-footer {
+  font-size: 1em;
+}
+
+body #app footer #icon-expand {
+  font-size: 20px;
+  padding: 0;
+  margin: auto;
+  color: #0A8CCC;
+  background-color: #73cefca8;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+
+body #app footer .subtitle-footer {
+  color: #919191;
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+body #app footer h3 {
+  margin-top: 4px;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=index.css.map */

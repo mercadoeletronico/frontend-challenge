@@ -3,6 +3,8 @@ $color-blue: #0A8CCC;
 $color-blue-tag: #0A8CCC;
 $color-status-orange: #F5A623;
 $color-subtitle: #919191;
+$color-code-font: #8A8A8A;
+$color-code-background: #73cefca8;
 
 body {
   padding: 0px;
@@ -12,7 +14,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 
   /* Mobile only */
-  @media (min-width: 0px) and (max-width:425px) {
+  @media (min-width: 0px) and (max-width:500px) {
     #app {
       margin: 0% 7%;
       .info-api {
@@ -20,7 +22,6 @@ body {
         padding: 0px;
         margin: auto;
         padding: 3px 3px;
-        border: 1px solid red;
       }
       header {
         display: flex;
@@ -28,7 +29,6 @@ body {
 
         .tag {
           display: inline-flex;
-
           width: 100%;
           .blue-tag {
             padding: 8px 50px 20px 50px;
@@ -57,11 +57,10 @@ body {
           }
         }
         .contact {
-          margin-top: 20px;
+          margin-top: 10px;
           .title {
-            // border: 1px solid red;
-            padding-bottom: px;
-            padding-top: 8px;
+            padding-bottom: 0px;
+            padding-top: 0px;
             font-weight: 600;
             font-size: 1.1rem;
           }
@@ -88,9 +87,16 @@ body {
       }
 
       .section-supplier {
-        border: 2px solid blue;
+        // border: 2px solid blue;
         display: flex;
         flex-direction: column;
+        .supplier-address {
+          .title-supplier {
+            color: $color-subtitle;
+            margin: 0;
+            padding-top: 10px;
+          }
+        }
       }
 
       footer {
@@ -115,52 +121,100 @@ body {
   }
   
    /*Tablet only */
-  @media (min-width: 426px) and (max-width: 768px) {
+  @media (min-width: 501px) and (max-width: 768px) {
     #app {
       background-color: $color-status-orange;
     }
   }
 
-  /*laptop only */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    #app {
-      background-color: greenyellow;
-    }
-  }
+  // /*laptop only */
+  // @media (min-width: 769px) and (max-width: 1024px) {
+  //   #app {
+  //     background-color: greenyellow;
+  //   }
+  // }
 
-  /*laptop up*/
-  @media (min-width: 769px) {
-    #app {
-      background-color: black
-    }
-  }
-  /*desktop up */
-  @media (min-width: 1025px) {
-    #app {
-      // background-color: pink;
-    }
-  }
+  // /*laptop up*/
+  // @media (min-width: 769px) {
+  //   #app {
+  //     background-color: pink;
+  //   }
+  // }
+  // /*desktop up */
+  // @media (min-width: 1025px) {
+  //   #app {
+  //     // background-color: pink;
+  //   }
+  // }
 
   /* ALL STYLES */
 
   #app {
+    .material-icons {
+      vertical-align: middle;
+      font-size: 14px;
+      padding: 5px 5px 5px 0px;
+      color: $color-subtitle;
+    }
     header {
       .blue-tag {
         background-color: $color-blue-tag;
         color: $color-body;
       }
       .contact {
-        .material-icons {
-          vertical-align: middle;
-          font-size: 14px;
+        #icon-header {
           color: $color-blue;
-          padding: 5px 5px 5px 0px;
         }
       }
-      .section-header {
-        .title {
-          // border: 1px solid green;
+    }
+
+    .section-supplier {
+      display: flex;
+      flex-direction: column;
+      .supplier-address {
+        .title-supplier {
+          color: $color-subtitle;
+          margin: 0;
         }
+        .subtitle-supplier {
+          font-weight: bold;
+          color: $color-blue;
+          margin-top: 8px;
+        }
+        .code-supplier {
+          background-color: $color-code-background;
+          color: $color-code-font;
+          border-radius: 20px;
+          padding: 5px 10px;
+          font-weight: bold;
+          font-size: 11px;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    footer {
+      .title-footer {
+        font-size: 1em;
+      }
+      #icon-expand {
+        font-size: 20px;
+        padding: 0;
+        margin: auto;
+        color: $color-blue;
+        background-color: $color-code-background;
+        border-radius: 30px;
+        margin-right: 5px;
+      }
+      .subtitle-footer {
+        color: $color-subtitle;
+        font-size: 0.9em;
+        margin-bottom: 0;
+      }
+      h3 {
+        // border: 1px solid red;
+        margin-top: 4px;
+        margin-bottom: 5px;
       }
     }
   }
