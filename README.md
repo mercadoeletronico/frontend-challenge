@@ -36,4 +36,4 @@ Os dados apresentados pela página deverão ser consumidos através da seguinte 
   * VS Code: o editor de código fonte
   * Material Icon: utilização dos ícones no link: [https://fonts.google.com/icons?selected=Material+Icons]
   * Google fonts: utilização da font do tipo Open Sans
-  * Figma: utilizei pontualmenta na manipulação da logo em .svg
+  * Figma: utilizei pontualmente na manipulação da logo do Mercado Eletrônico em .svg
