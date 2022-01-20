@@ -28,10 +28,10 @@
         </div>
         <div class="contact">
           <p class="title">{{ infoHeader.header.buyer }}</p>
-          <p class="info-api"><span class="material-icons">groups</span>{{ infoHeader.header.contact.name }} <span class="material-icons">info</span></p>
-          <p class="info-api"><span class="material-icons">mail</span>{{ infoHeader.header.contact.email }}</p>
-          <p class="info-api"><span class="material-icons">call</span>{{ infoHeader.header.contact.phone }}</p>
-          <p class="info-api"><span class="material-icons">fax</span>{{ infoHeader.header.contact.fax }}</p>
+          <p class="info-api"><span class="material-icons" id="icon-header">groups</span>{{ infoHeader.header.contact.name }} <span class="material-icons" id="icon-header">info</span></p>
+          <p class="info-api"><span class="material-icons" id="icon-header">mail</span>{{ infoHeader.header.contact.email }}</p>
+          <p class="info-api"><span class="material-icons" id="icon-header">call</span>{{ infoHeader.header.contact.phone }}</p>
+          <p class="info-api"><span class="material-icons" id="icon-header">fax</span>{{ infoHeader.header.contact.fax }}</p>
         </div>
         <div class="section-header">
           <p class="title">{{ infoHeader.header.currency }} {{ infoHeader.header.price}}</p>
@@ -43,46 +43,47 @@
       <!-- SECTION SUPPLIER -->
       <section class="section-supplier">
         <div class="supplier-address">
-          <p>Supplier</p>
-          <p>{{ infoHeader.supplier.name }} {{ infoHeader.supplier.code }}</p>
+          <p class="title-supplier">Supplier</p>
+          <p class="subtitle-supplier"><span>{{ infoHeader.supplier.name }}</span><span class="code-supplier">Code #{{ infoHeader.supplier.code }}</span></p>
           <p class="info-api">{{ infoHeader.supplier.document.value }}</p>
           <p class="info-api">{{ infoHeader.supplier.address }}</p>
         </div>
         <div class="supplier-contact">
-          <p class="info-api">{{ infoHeader.supplier.contact.name }} - {{ infoHeader.supplier.contact.email }}</p>
-          <p class="info-api">{{ infoHeader.supplier.contact.phone }} {{ infoHeader.supplier.contact.fax }}</p>
+          <p class="info-api"><span class="material-icons">account_circle</span>{{ infoHeader.supplier.contact.name }} - {{ infoHeader.supplier.contact.email }}</p>
+          <p class="info-api"><span class="material-icons">phone</span>{{ infoHeader.supplier.contact.phone }} <span class="material-icons">fax</span>{{ infoHeader.supplier.contact.fax }}</p>
         </div>
         <div class="supplier-right">
-          <p class="info-api">Read: {{ dateHour(infoHeader.header.readAt) }}</p>
-          <p class="info-api">Last Reply: {{ dateHour(infoHeader.header.lastReplyAt) }}</p>
+          <p class="info-api"><span class="material-icons">visibility</span>Read: {{ dateHour(infoHeader.header.readAt) }}</p>
+          <p class="info-api"><span class="material-icons">reply</span>Last Reply: {{ dateHour(infoHeader.header.lastReplyAt) }}</p>
         </div>
       </section>
 
       <!-- FOOTER -->
       <footer>
+        <h2 class="title-footer"><span class="material-icons" id="icon-expand">expand_more</span>Addresses</h2>
         <div class="ship-to">
-          <h2>{{ infoHeader.addresses[0].label }}</h2>
+          <h2 class="subtitle-footer">{{ infoHeader.addresses[0].label }}</h2>
           <h3>{{ infoHeader.addresses[0].name }} - <span class="addresses-code">{{ infoHeader.addresses[0].code }}</span></h3>
-          <p class="info-api">{{ infoHeader.addresses[0].address }}</p>
-          <p class="info-api">{{ infoHeader.addresses[0].contact.name }}</p>
-          <p class="info-api">{{ infoHeader.addresses[0].contact.email }}</p>
-          <p class="info-api">{{ infoHeader.addresses[0].contact.phone }} {{ infoHeader.addresses[0].contact.fax }}</p>
+          <p class="info-api"><span class="material-icons">where_to_vote</span>{{ infoHeader.addresses[0].address }}</p>
+          <p class="info-api"><span class="material-icons">person</span>{{ infoHeader.addresses[0].contact.name }}</p>
+          <p class="info-api"><span class="material-icons">email</span>{{ infoHeader.addresses[0].contact.email }}</p>
+          <p class="info-api"><span class="material-icons">phone</span>{{ infoHeader.addresses[0].contact.phone }} {{ infoHeader.addresses[0].contact.fax }}</p>
         </div>
         <div class="bill-to">
-          <h2> {{ infoHeader.addresses[1].label }}</h2>
+          <h2 class="subtitle-footer"> {{ infoHeader.addresses[1].label }}</h2>
           <h3>{{ infoHeader.addresses[1].name }}</h3>
-          <p class="info-api">{{ infoHeader.addresses[1].address }}</p>
-          <p class="info-api">{{ infoHeader.addresses[1].contact.name }}</p>
-          <p class="info-api">{{ infoHeader.addresses[1].contact.email }}</p>
-          <p class="info-api">{{ infoHeader.addresses[1].contact.phone }} {{ infoHeader.addresses[1].contact.fax }}</p>
+          <p class="info-api"><span class="material-icons">where_to_vote</span>{{ infoHeader.addresses[1].address }}</p>
+          <p class="info-api"><span class="material-icons">person</span>{{ infoHeader.addresses[1].contact.name }}</p>
+          <p class="info-api"><span class="material-icons">email</span>{{ infoHeader.addresses[1].contact.email }}</p>
+          <p class="info-api"><span class="material-icons">phone</span>{{ infoHeader.addresses[1].contact.phone }} {{ infoHeader.addresses[1].contact.fax }}</p>
         </div>
         <div class="charge-to">
-          <h2> {{ infoHeader.addresses[2].label }}</h2>
+          <h2 class="subtitle-footer"> {{ infoHeader.addresses[2].label }}</h2>
           <h3>{{ infoHeader.addresses[2].name }}</h3>
-          <p class="info-api">{{ infoHeader.addresses[2].address }}</p>
-          <p class="info-api">{{ infoHeader.addresses[2].contact.name }}</p>
-          <p class="info-api">{{ infoHeader.addresses[2].contact.email }}</p>
-          <p class="info-api">{{ infoHeader.addresses[2].contact.phone }} {{ infoHeader.addresses[2].contact.fax }}</p>
+          <p class="info-api"><span class="material-icons">where_to_vote</span>{{ infoHeader.addresses[2].address }}</p>
+          <p class="info-api"><span class="material-icons">person</span>{{ infoHeader.addresses[2].contact.name }}</p>
+          <p class="info-api"><span class="material-icons">email</span>{{ infoHeader.addresses[2].contact.email }}</p>
+          <p class="info-api"><span class="material-icons">phone</span>{{ infoHeader.addresses[2].contact.phone }} {{ infoHeader.addresses[2].contact.fax }}</p>
         </div>
       </footer>
     </div>
