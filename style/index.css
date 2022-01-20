@@ -5,12 +5,11 @@ body {
           box-sizing: border-box;
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
-  /* Mobile only */
-  /*Tablet only */
-  /* ALL STYLES */
+  /* Mobile and tabley only */
+  /* Laptop Up */
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 768px) {
   body #app {
     margin: 0% 7%;
   }
@@ -31,7 +30,7 @@ body {
   }
   body #app header .tag .blue-tag {
     padding: 8px 50px 20px 50px;
-    margin-left: -40px;
+    margin-left: -50px;
     width: 50%;
     border-bottom-right-radius: 30px;
   }
@@ -110,18 +109,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 425px) {
-  body #app header .tag .img-logo {
-    margin-left: -14%;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 768px) {
-  body #app {
-    background-color: #F5A623;
   }
 }
 
