@@ -2,7 +2,7 @@
 
 # Front-end Challenge - Entrega
 
-O projeto foi desenvolvido utilizando o framework javascript VueJS para o desenvolvimento da single page, tomando como base o conceito de Mobile-first. Além disso, foi utilizado o SASS para a estilização e para o consumo da API, o Axios.
+O projeto foi desenvolvido utilizando o framework javascript VueJS para o desenvolvimento da single page, tomando como base o conceito de Mobile-first. Além disso, foi utilizado o SASS para a estilização e, para o consumo da API, o Axios.
 
 ## :zap: Protótipo proposto
 App contendo a página de detalhes do processo baseado no layout: [https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362](https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362).
