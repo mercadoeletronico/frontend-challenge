@@ -18,9 +18,16 @@ Os dados apresentados pela página deverão ser consumidos através da seguinte 
 > GET https://me-frontend-challenge-api.herokuapp.com/orders/1
 
 ## :clipboard: Requisitos
+1. git clone https://github.com/pamelaotero/frontend-challenge
+2. git checkout pamelaotero (nome do branch)
+3. Instalação do Node.js em: [https://nodejs.org/en/](https://nodejs.org/en/)
+4. npm start
+5. Executando diretamente pelo VS Code:
+* Abra o arquivo index.html:
+* ![image](https://user-images.githubusercontent.com/28191532/150295781-8768ec7f-7ea4-4cf6-97dc-f18794e261c2.png)
+6. Este será o resultado(responsivo):
+![image](https://user-images.githubusercontent.com/28191532/150296098-151dc508-e2e3-4ef0-829d-0c247490e7ec.png)
 
-### Documentação
-  * Instruções de instalação e inicialização
   
 ### Design responsivo: foi utilizado o conceito mobile-first
 * Com o objetivo de oferecer uma melhor experiência ao usuário, foi implementado o projeto usando o mobile-first. Portanto, foi feito o uso das media queries do CSS de acordo com a responsividade de mobile a tablet e laptop up.
