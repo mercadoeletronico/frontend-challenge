@@ -16,15 +16,11 @@ body {
     #app {
       margin: 0% 7%;
       header {
-        background-color: yellowgreen;
         display: flex;
         flex-direction: column;
-        div {
-          border: 2px solid green;
-        }
+
         .tag {
           display: inline-flex;
-          flex-direction: row;
 
           width: 100%;
           .blue-tag {
@@ -55,17 +51,18 @@ body {
         }
         .contact {
           margin-top: 20px;
-          // border: 1px solid red;
           p {
-            font-size: 0.8rem;
-            margin: 5px 0px;
+            font-size: 0.9rem;
             padding: 0px;
             margin: auto;
+            padding: 3px 3px;
           }
           .title {
+            // border: 1px solid red;
+            padding-bottom: px;
+            padding-top: 8px;
             font-weight: 600;
-            font-size: 1.0rem;
-            margin-bottom: 5px 10px;
+            font-size: 1.1rem;
           }
         }
         .section-header {
@@ -104,7 +101,7 @@ body {
     }
   }
 
-  @media (min-width: 321px) and (max-width:425px) { 
+  @media (min-width: 321px) and (max-width:425px) {
     #app {
       header {
         .tag {
@@ -130,10 +127,16 @@ body {
     }
   }
 
+  /*laptop up*/
+  @media (min-width: 769px) {
+    #app {
+      background-color: black
+    }
+  }
   /*desktop up */
   @media (min-width: 1025px) {
     #app {
-      background-color: pink;
+      // background-color: pink;
     }
   }
 
@@ -146,13 +149,11 @@ body {
         color: $color-body;
       }
       .contact {
-        .title {
-        }
         .material-icons {
           vertical-align: middle;
           font-size: 14px;
           color: $color-blue;
-          padding: 5px;
+          padding: 5px 5px 5px 0px;
         }
       }
       .section-header {

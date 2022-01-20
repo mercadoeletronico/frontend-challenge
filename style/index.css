@@ -8,6 +8,7 @@ body {
   /* Mobile only */
   /*Tablet only */
   /*laptop only */
+  /*laptop up*/
   /*desktop up */
   /* ALL STYLES */
 }
@@ -17,7 +18,6 @@ body {
     margin: 0% 7%;
   }
   body #app header {
-    background-color: yellowgreen;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -26,17 +26,10 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body #app header div {
-    border: 2px solid green;
-  }
   body #app header .tag {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     width: 100%;
   }
   body #app header .tag .blue-tag {
@@ -68,15 +61,16 @@ body {
     margin-top: 20px;
   }
   body #app header .contact p {
-    font-size: 0.8rem;
-    margin: 5px 0px;
+    font-size: 0.9rem;
     padding: 0px;
     margin: auto;
+    padding: 3px 3px;
   }
   body #app header .contact .title {
+    padding-bottom: px;
+    padding-top: 8px;
     font-weight: 600;
-    font-size: 1.0rem;
-    margin-bottom: 5px 10px;
+    font-size: 1.1rem;
   }
   body #app header .section-header {
     padding-top: 10px;
@@ -137,9 +131,9 @@ body {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   body #app {
-    background-color: pink;
+    background-color: black;
   }
 }
 
@@ -152,6 +146,6 @@ body #app header .contact .material-icons {
   vertical-align: middle;
   font-size: 14px;
   color: #0A8CCC;
-  padding: 5px;
+  padding: 5px 5px 5px 0px;
 }
 /*# sourceMappingURL=index.css.map */
