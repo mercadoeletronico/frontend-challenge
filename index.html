@@ -11,7 +11,6 @@
 
   <body>
     <div id="app">
-
       <!-- HEADER -->
       <header>
         <div class="tag">
@@ -45,16 +44,20 @@
         <div class="supplier-address">
           <p class="title-supplier">Supplier</p>
           <p class="subtitle-supplier"><span>{{ infoHeader.supplier.name }}</span><span class="code-supplier">Code #{{ infoHeader.supplier.code }}</span></p>
-          <p class="info-api">{{ infoHeader.supplier.document.value }}</p>
-          <p class="info-api">{{ infoHeader.supplier.address }}</p>
         </div>
-        <div class="supplier-contact">
-          <p class="info-api"><span class="material-icons">account_circle</span>{{ infoHeader.supplier.contact.name }} - {{ infoHeader.supplier.contact.email }}</p>
-          <p class="info-api"><span class="material-icons">phone</span>{{ infoHeader.supplier.contact.phone }} <span class="material-icons">fax</span>{{ infoHeader.supplier.contact.fax }}</p>
-        </div>
-        <div class="supplier-right">
-          <p class="info-api"><span class="material-icons">visibility</span>Read: {{ dateHour(infoHeader.header.readAt) }}</p>
-          <p class="info-api"><span class="material-icons">reply</span>Last Reply: {{ dateHour(infoHeader.header.lastReplyAt) }}</p>
+        <div class="grid-supplier">
+          <div class="containers-supplier">
+            <p class="info-api">{{ infoHeader.supplier.document.value }}</p>
+            <p class="info-api">{{ infoHeader.supplier.address }}</p>
+          </div>
+          <div class="containers-supplier">
+            <p class="info-api"><span class="material-icons">account_circle</span>{{ infoHeader.supplier.contact.name }} - {{ infoHeader.supplier.contact.email }}</p>
+            <p class="info-api"><span class="material-icons">phone</span>{{ infoHeader.supplier.contact.phone }} <span class="material-icons">fax</span>{{ infoHeader.supplier.contact.fax }}</p>
+          </div>
+          <div class="containers-supplier" id="container-supplier-right">
+            <p class="info-api"><span class="material-icons">visibility</span>Read: {{ dateHour(infoHeader.header.readAt) }}</p>
+            <p class="info-api"><span class="material-icons">reply</span>Last Reply: {{ dateHour(infoHeader.header.lastReplyAt) }}</p>
+          </div>
         </div>
       </section>
 

@@ -98,15 +98,20 @@ body {
 }
 
 @media (min-width: 769px) {
+  body #app {
+    border: 1px solid red;
+    margin: 0px 3%;
+  }
+  body #app header {
+    border: 2px solid red;
+  }
   body #app header .tag {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: 300px;
-    border: 1px solid green;
   }
   body #app header .tag .blue-tag {
-    border: 2px solid red;
     padding: 8px 50px 20px 50px;
     margin-left: -20px;
     width: 200px;
@@ -144,22 +149,18 @@ body {
     margin-top: 0px;
     font-size: 0.7rem;
   }
-  body #app .title-footer {
-    margin-left: 3%;
-  }
-  body #app section {
+  body #app section .grid-supplier {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 30px;
-    -ms-grid-columns: 30% 30% 30%;
-        grid-template-columns: 30% 30% 30%;
-    padding: 10px;
+    gap: 5px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
-  body #app section div {
-    border: 1px solid green;
+  body #app section .grid-supplier #container-supplier-right {
+    text-align: right;
   }
   body #app footer {
     display: -ms-grid;
@@ -167,9 +168,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 24px;
-    -ms-grid-columns: 30% 30% 30%;
-        grid-template-columns: 30% 30% 30%;
+    gap: 19px;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
     padding: 10px;
   }
 }

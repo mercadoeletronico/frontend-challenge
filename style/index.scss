@@ -21,7 +21,6 @@ body {
       header {
         display: flex;
         flex-direction: column;
-
         .tag {
           display: inline-flex;
           width: 100%;
@@ -95,13 +94,16 @@ body {
   // laptop UP
   @media (min-width: 769px) {
     #app {
+      border: 1px solid red;
+      margin: 0px 3%;
       header {
+        border: 2px solid red;
         .tag {
           display: inline-flex;
           width: 300px;
-          border: 1px solid green;
+          // border: 1px solid green;
           .blue-tag {
-            border: 2px solid red;
+            // border: 2px solid red;
             padding: 8px 50px 20px 50px;
             margin-left: -20px;
             width: 200px;
@@ -142,24 +144,25 @@ body {
           }
         }
       }
-      .title-footer {
-        margin-left: 3%;
-      }
       section {
-        display: grid;
-        justify-content: center;
-        gap: 30px;
-        grid-template-columns: 30% 30% 30%;
-        padding: 10px;
-        div {
-          border: 1px solid green;
+        // border: 1px solid red;
+        .grid-supplier {
+          display: grid;
+          justify-content: center;
+          gap: 5px;
+          grid-template-columns: 1fr 1fr 1fr;
+          // border: 1px solid rgb(17, 16, 2);
+          #container-supplier-right {
+            text-align: right;
+          }
         }
       }
+      
       footer {
         display: grid;
         justify-content: center;
-        gap: 24px;
-        grid-template-columns: 30% 30% 30%;
+        gap: 19px;
+        grid-template-columns: 33% 33% 33%;
         padding: 10px;
       }
 
