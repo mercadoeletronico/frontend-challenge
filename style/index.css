@@ -16,6 +16,19 @@ body {
   body #app {
     margin: 0% 7%;
   }
+  body #app header {
+    background-color: yellowgreen;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #app header div {
+    border: 2px solid green;
+  }
   body #app header .tag {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -83,6 +96,26 @@ body {
   body #app header .section-header p {
     margin-top: 0px;
     font-size: 0.7rem;
+  }
+  body #app .section-supplier {
+    border: 2px solid blue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #app footer {
+    border: 2px solid rebeccapurple;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

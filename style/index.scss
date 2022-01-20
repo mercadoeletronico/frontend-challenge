@@ -16,7 +16,12 @@ body {
     #app {
       margin: 0% 7%;
       header {
-        // background-color: yellowgreen;
+        background-color: yellowgreen;
+        display: flex;
+        flex-direction: column;
+        div {
+          border: 2px solid green;
+        }
         .tag {
           display: inline-flex;
           flex-direction: row;
@@ -83,6 +88,19 @@ body {
           }
         }
       }
+
+      .section-supplier {
+        border: 2px solid blue;
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer {
+        border: 2px solid rebeccapurple;
+        display: flex;
+        flex-direction: column;
+      }
+
     }
   }
 
