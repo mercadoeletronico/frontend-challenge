@@ -99,6 +99,7 @@ body {
 
 @media (min-width: 769px) {
   body #app {
+    padding-top: 20px;
     margin: 0px 3%;
   }
   body #app header .container-right {
