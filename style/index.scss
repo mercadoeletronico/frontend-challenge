@@ -17,12 +17,7 @@ body {
   @media (min-width: 0px) and (max-width:500px) {
     #app {
       margin: 0% 7%;
-      .info-api {
-        font-size: 0.9rem;
-        padding: 0px;
-        margin: auto;
-        padding: 3px 3px;
-      }
+
       header {
         display: flex;
         flex-direction: column;
@@ -87,7 +82,6 @@ body {
       }
 
       .section-supplier {
-        // border: 2px solid blue;
         display: flex;
         flex-direction: column;
         .supplier-address {
@@ -96,11 +90,16 @@ body {
             margin: 0;
             padding-top: 10px;
           }
+          .subtitle-supplier {
+            font-size: 12px;
+          }
+          .code-supplier {
+            font-size: 11px;
+          }
         }
       }
 
       footer {
-        border: 2px solid rebeccapurple;
         display: flex;
         flex-direction: column;
       }
@@ -156,6 +155,12 @@ body {
       padding: 5px 5px 5px 0px;
       color: $color-subtitle;
     }
+    .info-api {
+      font-size: 0.9rem;
+      margin: auto;
+      padding: 0.3em 0px;
+    }
+    
     header {
       .blue-tag {
         background-color: $color-blue-tag;
@@ -171,6 +176,10 @@ body {
     .section-supplier {
       display: flex;
       flex-direction: column;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 2px 5px 19px rgba(108, 108, 108, 0.25);
       .supplier-address {
         .title-supplier {
           color: $color-subtitle;
@@ -194,8 +203,17 @@ body {
     }
 
     footer {
+      padding-bottom: 30px;
       .title-footer {
         font-size: 1em;
+        margin-top: 30px;
+        margin-bottom: 0px;
+      }
+      div {
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 20px;
+        box-shadow: 2px 5px 19px rgba(108, 108, 108, 0.25);
       }
       #icon-expand {
         font-size: 20px;
@@ -212,11 +230,10 @@ body {
         margin-bottom: 0;
       }
       h3 {
-        // border: 1px solid red;
+        font-size: 1em;
         margin-top: 4px;
         margin-bottom: 5px;
       }
     }
   }
-
 }

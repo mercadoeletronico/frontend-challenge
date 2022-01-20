@@ -14,12 +14,6 @@ body {
   body #app {
     margin: 0% 7%;
   }
-  body #app .info-api {
-    font-size: 0.9rem;
-    padding: 0px;
-    margin: auto;
-    padding: 3px 3px;
-  }
   body #app header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -102,8 +96,13 @@ body {
     margin: 0;
     padding-top: 10px;
   }
+  body #app .section-supplier .supplier-address .subtitle-supplier {
+    font-size: 12px;
+  }
+  body #app .section-supplier .supplier-address .code-supplier {
+    font-size: 11px;
+  }
   body #app footer {
-    border: 2px solid rebeccapurple;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -133,6 +132,12 @@ body #app .material-icons {
   color: #919191;
 }
 
+body #app .info-api {
+  font-size: 0.9rem;
+  margin: auto;
+  padding: 0.3em 0px;
+}
+
 body #app header .blue-tag {
   background-color: #0A8CCC;
   color: #FFFFFF;
@@ -150,6 +155,11 @@ body #app .section-supplier {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 19px rgba(108, 108, 108, 0.25);
+          box-shadow: 2px 5px 19px rgba(108, 108, 108, 0.25);
 }
 
 body #app .section-supplier .supplier-address .title-supplier {
@@ -173,8 +183,22 @@ body #app .section-supplier .supplier-address .code-supplier {
   margin-left: 4px;
 }
 
+body #app footer {
+  padding-bottom: 30px;
+}
+
 body #app footer .title-footer {
   font-size: 1em;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+body #app footer div {
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 2px 5px 19px rgba(108, 108, 108, 0.25);
+          box-shadow: 2px 5px 19px rgba(108, 108, 108, 0.25);
 }
 
 body #app footer #icon-expand {
@@ -194,6 +218,7 @@ body #app footer .subtitle-footer {
 }
 
 body #app footer h3 {
+  font-size: 1em;
   margin-top: 4px;
   margin-bottom: 5px;
 }
