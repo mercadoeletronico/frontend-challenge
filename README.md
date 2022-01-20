@@ -22,9 +22,9 @@ Os dados apresentados pela página deverão ser consumidos através da seguinte 
 ### Documentação
   * Instruções de instalação e inicialização
   
-  * Descrição sobre as tecnologias utilizadas no projeto
-  
-  * Design responsivo: foi utilizado o conceito mobile-first
+### Design responsivo: foi utilizado o conceito mobile-first
+* Com o objetivo de oferecer uma melhor experiência ao usuário, foi implementado o projeto usando o mobile-first. Portanto, foi feito o uso das media queries do CSS de acordo com a responsividade de mobile a tablet e laptop up.
+
 
 ### Tecnologias
   * VueJS: é um framework progressivo para a construção de interfaces de usuário. Ao contrário de outros frameworks monolíticos, Vue foi projetado desde sua concepção para ser adotável incrementalmente. Acesse a documentação em: [https://br.vuejs.org/v2/guide/index.html]
