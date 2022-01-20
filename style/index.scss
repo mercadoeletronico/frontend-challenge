@@ -15,6 +15,13 @@ body {
   @media (min-width: 0px) and (max-width:425px) {
     #app {
       margin: 0% 7%;
+      .info-api {
+        font-size: 0.9rem;
+        padding: 0px;
+        margin: auto;
+        padding: 3px 3px;
+        border: 1px solid red;
+      }
       header {
         display: flex;
         flex-direction: column;
@@ -51,12 +58,6 @@ body {
         }
         .contact {
           margin-top: 20px;
-          p {
-            font-size: 0.9rem;
-            padding: 0px;
-            margin: auto;
-            padding: 3px 3px;
-          }
           .title {
             // border: 1px solid red;
             padding-bottom: px;

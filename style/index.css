@@ -17,6 +17,13 @@ body {
   body #app {
     margin: 0% 7%;
   }
+  body #app .info-api {
+    font-size: 0.9rem;
+    padding: 0px;
+    margin: auto;
+    padding: 3px 3px;
+    border: 1px solid red;
+  }
   body #app header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -59,12 +66,6 @@ body {
   }
   body #app header .contact {
     margin-top: 20px;
-  }
-  body #app header .contact p {
-    font-size: 0.9rem;
-    padding: 0px;
-    margin: auto;
-    padding: 3px 3px;
   }
   body #app header .contact .title {
     padding-bottom: px;
