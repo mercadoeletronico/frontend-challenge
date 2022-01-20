@@ -6,7 +6,7 @@ body {
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   /* Mobile and tabley only */
-  /* Laptop Up */
+  /* ALL */
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -33,21 +33,6 @@ body {
     margin-left: -50px;
     width: 50%;
     border-bottom-right-radius: 30px;
-  }
-  body #app header .tag .blue-tag .title-tag {
-    font-size: 1.2rem;
-    margin: 3px 0px;
-  }
-  body #app header .tag .blue-tag .number {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0px;
-  }
-  body #app header .tag .blue-tag .serial {
-    font-size: 0.9rem;
-    font-weight: 700;
-    margin: 3px 0px 0px;
-    font-style: italic;
   }
   body #app header .tag .img-logo {
     margin: auto;
@@ -112,6 +97,83 @@ body {
   }
 }
 
+@media (min-width: 769px) {
+  body #app header .tag {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 300px;
+    border: 1px solid green;
+  }
+  body #app header .tag .blue-tag {
+    border: 2px solid red;
+    padding: 8px 50px 20px 50px;
+    margin-left: -20px;
+    width: 200px;
+    border-bottom-right-radius: 30px;
+  }
+  body #app header .tag .img-logo {
+    margin: auto;
+    margin-left: -40px;
+  }
+  body #app header .contact {
+    margin-top: 10px;
+  }
+  body #app header .contact .title {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  body #app header .section-header {
+    padding-top: 10px;
+  }
+  body #app header .section-header .title {
+    font-weight: 600;
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  body #app header .section-header .status {
+    color: #F5A623;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 3px 0px;
+  }
+  body #app header .section-header p {
+    margin-top: 0px;
+    font-size: 0.7rem;
+  }
+  body #app .title-footer {
+    margin-left: 3%;
+  }
+  body #app section {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    -ms-grid-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+    padding: 10px;
+  }
+  body #app section div {
+    border: 1px solid green;
+  }
+  body #app footer {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+    -ms-grid-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+    padding: 10px;
+  }
+}
+
 body #app .material-icons {
   vertical-align: middle;
   font-size: 14px;
@@ -130,18 +192,29 @@ body #app header .blue-tag {
   color: #FFFFFF;
 }
 
+body #app header .blue-tag .number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0px;
+}
+
+body #app header .blue-tag .serial {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 3px 0px 0px;
+  font-style: italic;
+}
+
+body #app header .blue-tag .title-tag {
+  font-size: 1.0rem;
+  margin: 3px 0px;
+}
+
 body #app header .contact #icon-header {
   color: #0A8CCC;
 }
 
 body #app .section-supplier {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
@@ -170,14 +243,24 @@ body #app .section-supplier .supplier-address .code-supplier {
   margin-left: 4px;
 }
 
-body #app footer {
-  padding-bottom: 30px;
-}
-
-body #app footer .title-footer {
+body #app .title-footer {
   font-size: 1em;
   margin-top: 30px;
   margin-bottom: 0px;
+}
+
+body #app #icon-expand {
+  font-size: 20px;
+  padding: 0;
+  margin: auto;
+  color: #0A8CCC;
+  background-color: #73cefca8;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+
+body #app footer {
+  padding-bottom: 30px;
 }
 
 body #app footer div {
@@ -186,16 +269,6 @@ body #app footer div {
   padding: 20px;
   -webkit-box-shadow: 2px 5px 19px rgba(108, 108, 108, 0.25);
           box-shadow: 2px 5px 19px rgba(108, 108, 108, 0.25);
-}
-
-body #app footer #icon-expand {
-  font-size: 20px;
-  padding: 0;
-  margin: auto;
-  color: #0A8CCC;
-  background-color: #73cefca8;
-  border-radius: 30px;
-  margin-right: 5px;
 }
 
 body #app footer .subtitle-footer {

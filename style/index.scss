@@ -30,21 +30,6 @@ body {
             margin-left: -50px;
             width: 50%;
             border-bottom-right-radius: 30px;
-            .title-tag {
-              font-size: 1.2rem;
-              margin: 3px 0px;
-            }
-            .number {
-              font-size: 1.5rem;
-              font-weight: 700;
-              margin: 0px;
-            }
-            .serial {
-              font-size: 0.9rem;
-              font-weight: 700;
-              margin: 3px 0px 0px;
-              font-style: italic;
-            }
           }
           .img-logo { 
             margin: auto;
@@ -107,7 +92,80 @@ body {
     }
   }
 
-  /* Laptop Up */
+  // laptop UP
+  @media (min-width: 769px) {
+    #app {
+      header {
+        .tag {
+          display: inline-flex;
+          width: 300px;
+          border: 1px solid green;
+          .blue-tag {
+            border: 2px solid red;
+            padding: 8px 50px 20px 50px;
+            margin-left: -20px;
+            width: 200px;
+            border-bottom-right-radius: 30px;
+          }
+          .img-logo { 
+            // border: 2px solid red;
+            margin: auto;
+            margin-left: -40px;
+          }
+        }
+        .contact {
+          margin-top: 10px;
+          .title {
+            padding-bottom: 0px;
+            padding-top: 0px;
+            font-weight: 600;
+            font-size: 1.1rem;
+          }
+        }
+        .section-header {
+          padding-top: 10px;
+          .title {
+            font-weight: 600;
+            font-size: 1.0rem;
+            margin-bottom: 10px;
+            margin-bottom: 0px;
+          }
+          .status {
+            color: $color-status-orange;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 3px 0px;
+          }
+          p {
+            margin-top: 0px;
+            font-size: 0.7rem;
+          }
+        }
+      }
+      .title-footer {
+        margin-left: 3%;
+      }
+      section {
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+        grid-template-columns: 30% 30% 30%;
+        padding: 10px;
+        div {
+          border: 1px solid green;
+        }
+      }
+      footer {
+        display: grid;
+        justify-content: center;
+        gap: 24px;
+        grid-template-columns: 30% 30% 30%;
+        padding: 10px;
+      }
+
+    }
+  }
+  /* ALL */
 
   #app {
     .material-icons {
@@ -126,6 +184,21 @@ body {
       .blue-tag {
         background-color: $color-blue-tag;
         color: $color-body;
+        .number {
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin: 0px;
+        }
+        .serial {
+          font-size: 0.9rem;
+          font-weight: 700;
+          margin: 3px 0px 0px;
+          font-style: italic;
+        }
+        .title-tag {
+          font-size: 1.0rem;
+          margin: 3px 0px;
+        }
       }
       .contact {
         #icon-header {
@@ -135,8 +208,6 @@ body {
     }
 
     .section-supplier {
-      display: flex;
-      flex-direction: column;
       padding: 20px;
       border-radius: 8px;
       margin-top: 20px;
@@ -163,27 +234,29 @@ body {
       }
     }
 
+    .title-footer {
+      font-size: 1em;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+    #icon-expand {
+      font-size: 20px;
+      padding: 0;
+      margin: auto;
+      color: $color-blue;
+      background-color: $color-code-background;
+      border-radius: 30px;
+      margin-right: 5px;
+    }
+
     footer {
       padding-bottom: 30px;
-      .title-footer {
-        font-size: 1em;
-        margin-top: 30px;
-        margin-bottom: 0px;
-      }
+      
       div {
         border-radius: 8px;
         margin-top: 20px;
         padding: 20px;
         box-shadow: 2px 5px 19px rgba(108, 108, 108, 0.25);
-      }
-      #icon-expand {
-        font-size: 20px;
-        padding: 0;
-        margin: auto;
-        color: $color-blue;
-        background-color: $color-code-background;
-        border-radius: 30px;
-        margin-right: 5px;
       }
       .subtitle-footer {
         color: $color-subtitle;
