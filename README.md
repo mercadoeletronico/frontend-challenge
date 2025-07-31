@@ -1,42 +1,67 @@
-<img src="https://cdn.me.com.br/logos/me_primary.png" alt="ME">
+<img src="https://cdn.me.com.br/logos/me_primary.png" alt="ME" width="200">
 
 # Front-end Challenge
 
-Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end.
+Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end! 🚀
 
-## :zap: O Desafio
-Seu objetivo é criar um App contendo a página de detalhes do processo baseado no layout proposto.
+Nosso objetivo é avaliar **a qualidade da sua implementação**, considerando organização, boas práticas e clareza de código.
 
-Para acessar o layout
+---
 
-1. Acesse o link [https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362](https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362).
-2. Caso tenha algum problema ou dúvida na visualização do sketch favor nos avisar.
+## ⚡ O Desafio
 
-Os dados apresentados pela página deverão ser consumidos através da seguinte API.
+Você deverá criar uma **página de detalhes de um processo** seguindo o layout fornecido.
 
-> GET https://api.mercadoe.space/orders/1
+**Layout disponível em:**  
+[https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362](https://www.sketch.com/s/13086eee-9ed3-41f0-870f-c0dc5b1fb362)
 
-## :clipboard: Requisitos
+> Caso tenha dificuldades para acessar o layout, nos avise.
 
-### Requisitos obrigatórios
-* Documentação
-  * Instruções de instalação e inicialização
-  * Descrição sobre as tecnologias utilizadas no projeto
-* Design responsivo
-  * O layout deve se adaptar bem a diferentes tamanhos de tela.
+Os dados exibidos na página devem ser consumidos via API:
 
-### Você pode
-* Utilizar qualquer framework JS moderno (React, Vue, Svelte...)
-* Alterar a proposta do layout caso necessário - você terá que nos explicar o porque das mudanças!
-* Publicar e hospedar em algum serviço de cloud.
 
-### O que gostaríamos de ver
-* Uma arquitetura consistente, focada na simplicidade do projeto (**keep it simple!**)
-* Testes unitários, e2e e/ou coverage (testes são parte importante do desenvolvimento; você pode utilizar Cypress, Playwright...)
+---
 
-## :rocket: Entrega
-Para enviar seu código, você pode seguir algumas maneiras:
+## 📋 Requisitos
 
-* Enviar a URL do seu repositório no GitHub para o(a) Recrutador(a)
-* Fazer um fork deste repositório, criar uma branch com o seu nome e enviar um pull request
-* Compartilhar link de download.
+### ✅ Obrigatórios
+- **Documentação no README**
+  - Como instalar e rodar o projeto
+  - Tecnologias utilizadas
+- **Design responsivo**
+  - A página deve se adaptar a diferentes tamanhos de tela
+- **Deploy em cloud**
+  - Publicar o projeto em algum serviço (Vercel, Netlify, Render, etc.)
+
+### 💡 Diferenciais
+- Arquitetura simples e organizada (*Keep it simple!*)
+- Testes unitários e/ou e2e  
+  *(Jest, Vitest, Cypress, Playwright...)*
+- Boas práticas de versionamento e commits claros
+- Explicação de alterações no layout, se houver
+
+---
+
+## 🚀 Entrega
+
+Envie para o(a) recrutador(a):
+
+1. **Link público do projeto rodando em cloud**
+2. **Código-fonte do projeto**, em uma das formas:
+   - Link para repositório público no GitHub  
+   - Fork deste repositório + branch com seu nome + Pull Request  
+   - Link de download do código
+
+---
+
+## 🔎 O que será avaliado
+
+| Critério                  | Descrição                                                                 |
+|---------------------------|---------------------------------------------------------------------------|
+| **Organização do código** | Estrutura clara, componentização e boas práticas                          |
+| **Fidelidade ao layout**  | Aderência ao design e responsividade                                      |
+| **Simplicidade**          | Solução fácil de entender e manter                                        |
+| **Commits e Git**         | Mensagens de commit claras e histórico bem estruturado                    |
+| **Testes (opcional)**     | Cobertura e qualidade dos testes unitários e/ou e2e                       |
+
+Boa sorte! 🎉
