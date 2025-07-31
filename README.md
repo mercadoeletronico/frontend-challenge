@@ -17,8 +17,9 @@ Você deverá criar uma **página de detalhes de um processo** seguindo o layout
 
 > Caso tenha dificuldades para acessar o layout, nos avise.
 
-Os dados exibidos na página devem ser consumidos via API:
+Os dados apresentados pela página deverão ser consumidos através da seguinte API.
 
+> GET https://api.mercadoe.space/orders/1
 
 ---
 
