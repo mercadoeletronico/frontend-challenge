@@ -1,4 +1,4 @@
-<img src="me.svg" width="200" alt="ME">
+<img src="https://cdn.me.com.br/logos/me_primary.png" width="200" alt="ME">
 
 # Front-end Challenge
 
@@ -14,7 +14,7 @@ Para acessar o layout
 
 Os dados apresentados pela página deverão ser consumidos através da seguinte API.
 
-> GET https://me-frontend-challenge-api.herokuapp.com/orders/1
+> GET https://api.mercadoe.space/orders/1
 
 ## :clipboard: Requisitos
 
@@ -30,7 +30,7 @@ Os dados apresentados pela página deverão ser consumidos através da seguinte 
 
 ### O que gostaríamos de ver
 * Uma arquitetura consistente, focada na simplicidade do projeto (**keep it simple!**)
-* Testes unitários, e2e e/ou coverage (testes são parte importante do desenvolvimento; você pode utilizar Jest, Cypress, Mocha, Istanbul, Chai...)
+* Testes unitários, e2e e/ou coverage (testes são parte importante do desenvolvimento; você pode utilizar Cypress, Playwright...)
 
 ## :rocket: Entrega
 Para enviar seu código, você pode:
