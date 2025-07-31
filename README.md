@@ -13,7 +13,7 @@ Nosso objetivo é avaliar **a qualidade da sua implementação**, considerando o
 Você deverá criar uma **página de detalhes de um processo** seguindo o layout fornecido.
 
 **Layout disponível em:**  
-[https://www.figma.com/design/Tddaiz626kkBlD4NclUS7m/Front-end-Challenge?node-id=1-4738&m=dev](Figma)
+[Link do Figma](https://www.figma.com/design/Tddaiz626kkBlD4NclUS7m/Front-end-Challenge?node-id=1-4738&m=dev)
 
 > Caso tenha dificuldades para acessar o layout, nos avise.
 
