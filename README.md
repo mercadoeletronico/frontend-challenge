@@ -23,17 +23,20 @@ Os dados apresentados pela página deverão ser consumidos através da seguinte 
   * Instruções de instalação e inicialização
   * Descrição sobre as tecnologias utilizadas no projeto
 * Design responsivo
+  * O layout deve se adaptar bem a diferentes tamanhos de tela.
 
 ### Você pode
 * Utilizar qualquer framework JS moderno (React, Vue, Svelte...)
 * Alterar a proposta do layout caso necessário - você terá que nos explicar o porque das mudanças!
+* Publicar e hospedar em algum serviço de cloud.
 
 ### O que gostaríamos de ver
 * Uma arquitetura consistente, focada na simplicidade do projeto (**keep it simple!**)
 * Testes unitários, e2e e/ou coverage (testes são parte importante do desenvolvimento; você pode utilizar Cypress, Playwright...)
 
 ## :rocket: Entrega
-Para enviar seu código, você pode:
+Para enviar seu código, você pode seguir algumas maneiras:
 
 * Enviar a URL do seu repositório no GitHub para o(a) Recrutador(a)
 * Fazer um fork deste repositório, criar uma branch com o seu nome e enviar um pull request
+* Compartilhar link de download.
