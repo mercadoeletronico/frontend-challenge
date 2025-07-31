@@ -1,4 +1,4 @@
-<img src="https://cdn.me.com.br/logos/me_primary.png" alt="ME" width="200">
+<img src="https://cdn.me.com.br/logos/me_primary.png" alt="ME">
 
 # Front-end Challenge
 
