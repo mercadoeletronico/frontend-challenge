@@ -25,6 +25,7 @@ Os dados exibidos na página devem ser consumidos via API:
 ## 📋 Requisitos
 
 ### ✅ Obrigatórios
+- **Desenvolvimento utilizando Vue2 ou Vue3**
 - **Documentação no README**
   - Como instalar e rodar o projeto
   - Tecnologias utilizadas
