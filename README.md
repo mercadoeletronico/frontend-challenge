@@ -61,7 +61,6 @@ Envie para o(a) recrutador(a):
 | **Organização do código** | Estrutura clara, componentização e boas práticas                          |
 | **Fidelidade ao layout**  | Aderência ao design e responsividade                                      |
 | **Simplicidade**          | Solução fácil de entender e manter                                        |
-| **Commits e Git**         | Mensagens de commit claras e histórico bem estruturado                    |
 | **Testes (opcional)**     | Cobertura e qualidade dos testes unitários e/ou e2e                       |
 
 Boa sorte! 🎉
