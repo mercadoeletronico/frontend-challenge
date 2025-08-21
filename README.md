@@ -1,57 +1,70 @@
-# mercadoe
+<img src="https://cdn.me.com.br/logos/me_primary.png" alt="ME">
 
-This template should help get you started developing with Vue 3 in Vite.
+# Front-end Challenge
 
-## Recommended IDE Setup
+Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end! 🚀
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Nosso objetivo é avaliar **a qualidade da sua implementação**, considerando organização, boas práticas e clareza de código.
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ⚡ O Desafio
 
-## Project Setup
+Você deverá criar uma **página de detalhes de um processo** seguindo o layout fornecido.
 
-```sh
-npm install
-```
+**Layout disponível em:**  
+[Link do Figma](https://www.figma.com/design/Tddaiz626kkBlD4NclUS7m/Front-end-Challenge?node-id=1-4738&m=dev)
 
-### Compile and Hot-Reload for Development
+> Caso tenha dificuldades para acessar o layout, nos avise.
 
-```sh
-npm run dev
-```
+Os dados apresentados pela página deverão ser consumidos através da seguinte API.
 
-### Compile and Minify for Production
+> GET https://api.mercadoe.space/orders/1
 
-```sh
-npm run build
-```
+---
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## 📋 Requisitos
 
-```sh
-npm run test:unit
-```
+### ✅ Obrigatórios
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+- **Desenvolvimento utilizando Vue2 ou Vue3**
+- **Documentação no README**
+  - Como instalar e rodar o projeto
+  - Tecnologias utilizadas
+- **Design responsivo**
+  - A página deve se adaptar a diferentes tamanhos de tela
+- **Deploy em cloud**
+  - Publicar o projeto em algum serviço (Vercel, Netlify, Render, etc.)
 
-```sh
-npm run test:e2e:dev
-```
+### 💡 Diferenciais
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
+- Arquitetura simples e organizada (_Keep it simple!_)
+- Testes unitários e/ou e2e  
+  _(Jest, Vitest, Cypress, Playwright...)_
+- Boas práticas de versionamento e commits claros
+- Explicação de alterações no layout, se houver
 
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+---
 
-```sh
-npm run build
-npm run test:e2e
-```
+## 🚀 Entrega
 
-### Lint with [ESLint](https://eslint.org/)
+Envie para o(a) recrutador(a):
 
-```sh
-npm run lint
-```
+1. **Link público do projeto rodando em cloud**
+2. **Código-fonte do projeto**, em uma das formas:
+   - Link para repositório público no GitHub
+   - Fork deste repositório + branch com seu nome + Pull Request
+   - Link de download do código
+
+---
+
+## 🔎 O que será avaliado
+
+| Critério                  | Descrição                                           |
+| ------------------------- | --------------------------------------------------- |
+| **Organização do código** | Estrutura clara, componentização e boas práticas    |
+| **Fidelidade ao layout**  | Aderência ao design e responsividade                |
+| **Simplicidade**          | Solução fácil de entender e manter                  |
+| **Testes (opcional)**     | Cobertura e qualidade dos testes unitários e/ou e2e |
+
+Boa sorte! 🎉
