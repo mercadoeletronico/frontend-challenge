@@ -1,26 +1,23 @@
 <template>
-  <CardPreOrder :headerData="headerData" />
+  <CardPreOrder v-if="headerData" :header="headerData.header" />
+  <div v-else>Carregando...</div>
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
 import CardPreOrder from '@/components/cards/PreOrder.vue'
+import { usePreOrder } from '@/composables/api/usePreOrder'
 
 defineOptions({
   name: 'HomePage'
 })
 
-const headerData = {
-  orderNumber: "4510001114",
-  orderCode: "ME11223344",
-  buyerName: "MTP West Buyer",
-  buyerGroup: "Jacksonville Group (Jason Burn)",
-  buyerEmail: "jacksonvillegroup@me.com",
-  buyerPhone: "903-575-3050",
-  buyerFax: "999-575-3050",
-  value: "20000",
-  orderStatus: "Need to confirm",
-  createdAt: "2020-04-16 at 15:32:55",
-  infoIcon: true,
-  status: "Need to confirm"
-}
+const headerData = ref(null)
+const { fetchPreOrder } = usePreOrder()
+
+onMounted(async () => {
+  // Aqui você pode tratar o retorno da API conforme necessário
+  headerData.value = await fetchPreOrder()
+  console.log(headerData.value.header)
+})
 </script>
