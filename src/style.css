@@ -8,7 +8,7 @@
   --color-neutral-700: #303E49;
   --color-neutral-500: #566574;
   --color-neutral-300: #A3ACB6;
-  --shadow-level-1:rgba(0, 0, 0, 0.08);
+  --shadow-level-1: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
 }
 
 :root {
