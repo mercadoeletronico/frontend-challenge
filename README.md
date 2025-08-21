@@ -12,7 +12,7 @@ Nosso objetivo é avaliar **a qualidade da sua implementação**, considerando o
 
 Você deverá criar uma **página de detalhes de um processo** seguindo o layout fornecido.
 
-**Layout disponível em:**  
+**Layout disponível em:**
 [Link do Figma](https://www.figma.com/design/Tddaiz626kkBlD4NclUS7m/Front-end-Challenge?node-id=1-4738&m=dev)
 
 > Caso tenha dificuldades para acessar o layout, nos avise.
@@ -37,7 +37,7 @@ Os dados apresentados pela página deverão ser consumidos através da seguinte 
 
 ### 💡 Diferenciais
 - Arquitetura simples e organizada (*Keep it simple!*)
-- Testes unitários e/ou e2e  
+- Testes unitários e/ou e2e
   *(Jest, Vitest, Cypress, Playwright...)*
 - Boas práticas de versionamento e commits claros
 - Explicação de alterações no layout, se houver
@@ -50,8 +50,8 @@ Envie para o(a) recrutador(a):
 
 1. **Link público do projeto rodando em cloud**
 2. **Código-fonte do projeto**, em uma das formas:
-   - Link para repositório público no GitHub  
-   - Fork deste repositório + branch com seu nome + Pull Request  
+   - Link para repositório público no GitHub
+   - Fork deste repositório + branch com seu nome + Pull Request
    - Link de download do código
 
 ---
