@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+
+@theme {
+  --color-success-500: #1E976C;
+  --color-primary-500: #1052E0;
+  --color-primary-50: #EDF3FF;
+  --color-neutral-700: #303E49;
+  --color-neutral-500: #566574;
+  --color-neutral-300: #A3ACB6;
+  --shadow-level-1:rgba(0, 0, 0, 0.08);
+}
+
 :root {
   font-family: "Roboto", sans-serif;
 }
