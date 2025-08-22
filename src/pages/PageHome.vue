@@ -4,6 +4,17 @@
   </main>
 </template>
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import OrderHeader from '../components/order/OrderHeader.vue'
-import AppCard from '../components/ui/AppCard.vue'
+import {useOrderStore} from '../stores/order.store';
+const {getOrderById} = useOrderStore();
+
+
+
+
+
+onMounted(()=>{
+  getOrderById(1);
+})
+
 </script>
