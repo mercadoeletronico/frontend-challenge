@@ -19,13 +19,13 @@
                   :value="orderBuyerContact.email"
                 />
                 <AppContactLine
-                  class="mt-1 lg:mt-0 md:ml-4"
+                  class="mt-2 lg:mt-0 md:ml-4"
                   type="phone"
                   icon="phone"
                   :value="orderBuyerContact.phone"
                 />
                 <AppContactLine
-                  class="mt-1 md:mt-0 md:ml-4"
+                  class="mt-2 md:mt-0 md:ml-4"
                   type="phone"
                   icon="fax"
                   :value="orderBuyerContact.fax"
