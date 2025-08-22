@@ -31,7 +31,7 @@ const props = defineProps({
     default: '',
   },
 })
-const isOpen = ref(false)
+const isOpen = ref(true)
 
 function toggleAccordion() {
   isOpen.value = !isOpen.value
