@@ -9,6 +9,7 @@
         </div>
         <div class="w-full flex lg:flex-row flex-col justify-between lg:pl-6 lg:mt-0 mt-6 lg:px-0 px-4">
           <div>
+
             <h2 class="font-semibold text-[1.25rem] text-neutral-700">{{ orderBuyer }}</h2>
             <div class="mt-2 lg:mt-3">
               <AppContactLine :value="orderBuyerContact.name" />
@@ -59,11 +60,11 @@ import AppIconSvg from '../ui/AppIconSvg.vue'
 
 const props = defineProps({
   orderNumber: {
-    type: String,
+    type: [String, Number],
     default: '0000000000',
   },
   orderSerialNumber: {
-    type: String,
+    type: [String, Number],
     default: '00000000',
   },
   orderBuyer: {
@@ -75,7 +76,7 @@ const props = defineProps({
     default: 'USD',
   },
   orderPrice: {
-    type: Number,
+    type: [String, Number],
     default: 0,
   },
   orderStatus: {
