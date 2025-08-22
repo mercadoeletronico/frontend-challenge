@@ -9,17 +9,8 @@
         </div>
         <div class="w-full flex lg:flex-row flex-col justify-between lg:pl-6 lg:mt-0 mt-6 lg:px-0 px-4">
           <div>
-
             <h2 class="font-semibold text-[1.25rem] text-neutral-700">{{ orderBuyer }}</h2>
-            <div class="mt-2 lg:mt-3">
-              <AppContactLine :value="orderBuyerContact.name" />
-              <div class="flex items-start md:items-center md:flex-row flex-col mt-2 lg:mt-1">
-                <AppContactLine type="email" icon="mail" :value="orderBuyerContact.email" />
-                <AppContactLine class="mt-2 lg:mt-0 md:ml-4" type="phone" icon="phone"
-                  :value="orderBuyerContact.phone" />
-                <AppContactLine class="mt-2 md:mt-0 md:ml-4" type="phone" icon="fax" :value="orderBuyerContact.fax" />
-              </div>
-            </div>
+            <OrderHeaderContact :order-buyer-contact="orderBuyerContact" />
           </div>
           <div class="lg:text-right lg:mt-0 mt-4 lg:ml-4 ml-0">
             <p class="text-neutral-500 text-[1.25rem] font-semibold">{{ orderPriceStr }}</p>
@@ -28,9 +19,7 @@
             </p>
             <div class="flex items-center">
               <p class="text-neutral-500 text-xs font-normal mt-1">{{ orderCreatedAt }}</p>
-              <Popper content="
-           Creation date and time of this order.
-              " :hover="true">
+              <Popper content="Creation date and time of this order." :hover="true">
                 <span class=" block ml-1 transition-all cursor-pointer text-neutral-300 hover:-translate-y-1">
                   <AppIconSvg name="tip" size="16" />
                 </span>
@@ -46,8 +35,8 @@
 </template>
 <script setup>
 import { computed } from 'vue'
-import AppContactLine from '../ui/AppContactLine.vue'
 import AppIconSvg from '../ui/AppIconSvg.vue'
+import OrderHeaderContact from './OrderHeaderContact.vue'
 
 
 const props = defineProps({
@@ -82,14 +71,9 @@ const props = defineProps({
   },
   orderBuyerContact: {
     type: Object,
-    default: {
-      email: 'buyer@example.com',
-      phone: '000-000-0000',
-      address: '123 Street, City, Country',
-      name: 'Buyer (John Doe)',
-      fax: '000-000-0000',
-    },
-  },
+    default: {},
+  }
+
 })
 
 const orderSerialNumberStr = computed(() => `#ME${props.orderSerialNumber}`)
