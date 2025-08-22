@@ -6,8 +6,8 @@
       <Skeleton width="60px" height="24px" class="ml-2 rounded-lg" v-if="showBadge" />
     </div>
     <div class="grid grid-cols-1  mt-4 gap-1 " :class="{ 'md:grid-cols-2': twoColumns }">
-      <Skeleton v-for="i in 3" :key="i" width="300px" height="16px" />
-      <Skeleton v-for="i in 3" :key="i" width="300px" height="16px" />
+      <Skeleton v-for="i in 3" :key="i" :width="widthContact" height="16px" />
+      <Skeleton v-for="i in 3" :key="i" :width="widthContact" height="16px" />
     </div>
   </div>
 </template>
@@ -23,6 +23,10 @@ const props = defineProps({
   twoColumns: {
     type: Boolean,
     default: true
+  },
+  widthContact: {
+    type: String,
+    default: '300px'
   }
 })
 
