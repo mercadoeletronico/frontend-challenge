@@ -21,7 +21,7 @@ import AppIconSvg from './AppIconSvg.vue'
 const props = defineProps({
   type: {
     type: String,
-    required: true,
+    default: 'name',
     validator: (value) => ['email', 'phone', 'name', 'fax'].includes(value),
   },
 
