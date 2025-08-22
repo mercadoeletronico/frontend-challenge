@@ -14,37 +14,28 @@
             <div class="mt-2 lg:mt-3">
               <AppContactLine :value="orderBuyerContact.name" />
               <div class="flex items-start md:items-center md:flex-row flex-col mt-2 lg:mt-1">
-                <AppContactLine
-                  type="email"
-                  icon="mail"
-                  :value="orderBuyerContact.email"
-                />
-                <AppContactLine
-                  class="mt-2 lg:mt-0 md:ml-4"
-                  type="phone"
-                  icon="phone"
-                  :value="orderBuyerContact.phone"
-                />
-                <AppContactLine
-                  class="mt-2 md:mt-0 md:ml-4"
-                  type="phone"
-                  icon="fax"
-                  :value="orderBuyerContact.fax"
-                />
+                <AppContactLine type="email" icon="mail" :value="orderBuyerContact.email" />
+                <AppContactLine class="mt-2 lg:mt-0 md:ml-4" type="phone" icon="phone"
+                  :value="orderBuyerContact.phone" />
+                <AppContactLine class="mt-2 md:mt-0 md:ml-4" type="phone" icon="fax" :value="orderBuyerContact.fax" />
               </div>
             </div>
           </div>
           <div class="lg:text-right lg:mt-0 mt-4 lg:ml-4 ml-0">
             <p class="text-neutral-500 text-[1.25rem] font-semibold">{{ orderPriceStr }}</p>
-            <p
-              class="text-neutral-500 text-[1.25rem] font-semibold mt-1"
-              :class="orderStatusClasses"
-            >
+            <p class="text-neutral-500 text-[1.25rem] font-semibold mt-1" :class="orderStatusClasses">
               {{ orderStatus }}
             </p>
             <div class="flex items-center">
               <p class="text-neutral-500 text-xs font-normal mt-1">{{ orderCreatedAt }}</p>
-              <button class="ml-1 transition-all cursor-pointer text-neutral-300 hover:-translate-y-1"> <AppIconSvg  name="tip" size="16" /></button>
+              <Popper content="
+           Creation date and time of this order.
+              " :hover="true">
+                <button class="ml-1 transition-all cursor-pointer text-neutral-300 hover:-translate-y-1">
+                  <AppIconSvg name="tip" size="16" />
+                </button>
+              </Popper>
+
             </div>
 
           </div>
@@ -57,6 +48,7 @@
 import { computed } from 'vue'
 import AppContactLine from '../ui/AppContactLine.vue'
 import AppIconSvg from '../ui/AppIconSvg.vue'
+
 
 const props = defineProps({
   orderNumber: {
