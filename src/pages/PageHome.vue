@@ -19,8 +19,8 @@
         <AppAccordion title="Addresses">
           <template #content>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-              <template v-for="address in orderData.value?.addresses" :key="address.id">
-                <AddressCard :supplier="orderData.value?.supplier" :address="address" />
+              <template >
+                <AddressCard v-for="address in orderData.value?.addresses" :key="address.id"  :address="address" />
               </template>
 
             </div>
