@@ -1,5 +1,5 @@
 <template>
-  <main class="pt-0 lg:pt-6">
+  <main class="pt-0 lg:py-6">
 
     <OrderHeader :order-number="orderData.value?.header?.number" :order-serial-number="orderData.value?.header?.serial"
       :order-buyer="orderData.value?.header?.buyer" :order-buyer-contact="orderData.value?.header?.contact"
