@@ -1,11 +1,9 @@
 <template>
-  <main>
-    <h1 class="text-2xl text-primary-500">Bem vindo</h1>
-    <!-- APENAS PARA VISUALIZAÇÃO DO COMPONENTE EM DESENVOLVIMENTO -->
-    <AppCard />
-    <!-- APENAS PARA VISUALIZAÇÃO DO COMPONENTE EM DESENVOLVIMENTO -->
+  <main class="pt-6">
+    <OrderHeader />
   </main>
 </template>
 <script setup lang="ts">
+import OrderHeader from '../components/order/OrderHeader.vue'
 import AppCard from '../components/ui/AppCard.vue'
 </script>
