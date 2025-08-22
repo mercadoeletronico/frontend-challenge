@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container mx-auto ">
-      <div class="flex items-start lg:flex-row flex-col">
+      <div v-if="!loading" class="flex items-start lg:flex-row flex-col">
         <div class="bg-primary-500 py-8 px-4  lg:p-4  lg:rounded-r-lg min-w-full lg:min-w-[200px]">
           <h3 class="text-lg text-white font-normal leading-6">Pre-Order</h3>
           <p class="font-bold text-white text-2xl leading-8 mt-1">{{ orderNumber }}</p>
@@ -19,17 +19,20 @@
             </p>
             <div class="flex items-center">
               <p class="text-neutral-500 text-xs font-normal mt-1">{{ orderCreatedAt }}</p>
-              <Popper content="Creation date and time of this order." :hover="true">
+              <Popper :hover="true" placement="top">
                 <span class=" block ml-1 transition-all cursor-pointer text-neutral-300 hover:-translate-y-1">
                   <AppIconSvg name="tip" size="16" />
                 </span>
+                <template #content>
+                  <p class="text-xs text-white">Date and time of order creation</p>
+                </template>
               </Popper>
-
             </div>
 
           </div>
         </div>
       </div>
+      <OrderHeaderSkeleton v-else />
     </div>
   </header>
 </template>
@@ -37,24 +40,25 @@
 import { computed } from 'vue'
 import AppIconSvg from '../ui/AppIconSvg.vue'
 import OrderHeaderContact from './OrderHeaderContact.vue'
+import OrderHeaderSkeleton from './OrderHeaderSkeleton.vue'
 
 
 const props = defineProps({
   orderNumber: {
     type: [String, Number],
-    default: '0000000000',
+    default: '',
   },
   orderSerialNumber: {
     type: [String, Number],
-    default: '00000000',
+    default: '',
   },
   orderBuyer: {
     type: String,
-    default: 'Buyer',
+    default: '',
   },
   orderCurrency: {
     type: String,
-    default: 'USD',
+    default: '',
   },
   orderPrice: {
     type: [String, Number],
@@ -67,11 +71,15 @@ const props = defineProps({
   },
   orderCreatedAt: {
     type: String,
-    default: 'Created at 2025-22-08T10:00:00.382',
+    default: '',
   },
   orderBuyerContact: {
     type: Object,
     default: {},
+  },
+  loading: {
+    type: Boolean,
+    default: false
   }
 
 })
