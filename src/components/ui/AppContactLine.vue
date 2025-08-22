@@ -1,12 +1,13 @@
 <template>
+
   <a
-    v-if="contactIsLink"
+    v-if="isLink"
     :href="linkUrl"
     class="text-neutral-500 text-xs font-normal flex items-center transition-all hover:text-primary-500"
-    >{{ contactValue }}</a
+    >{{ value }}</a
   >
   <span v-else class="text-neutral-500 text-xs font-normal flex items-center">{{
-    contactValue
+    value
   }}</span>
 </template>
 
@@ -14,31 +15,31 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-  contactType: {
+  type: {
     type: String,
     required: true,
     validator: (value) => ['email', 'phone', 'name', 'fax'].includes(value),
   },
 
-  contactValue: {
+  value: {
     type: String,
     default: 'Contact',
   },
 
-  contactIcon: {
+  icon: {
     type: String,
     default: null,
   },
 })
 
-const contactIsLink = computed(() => ['email', 'phone'].includes(props.contactType))
+const isLink = computed(() => ['email', 'phone'].includes(props.type))
 
 const linkUrl = computed(() => {
-  switch (props.contactType) {
+  switch (props.type) {
     case 'email':
-      return `mailto:${props.contactValue}`
+      return `mailto:${props.value}`
     case 'phone':
-      return `tel:+1${props.contactValue.replace(/[^0-9+]/g, '')}`
+      return `tel:+1${props.value.replace(/[^0-9+]/g, '')}`
     default:
       return null
   }

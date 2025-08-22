@@ -11,24 +11,22 @@
           <div>
             <h2 class="font-semibold text-[1.25rem] text-neutral-700">{{ orderBuyer }}</h2>
             <div class="mt-3">
-              <AppContactLine :contact-value="orderBuyerContact.name" />
+              <AppContactLine :value="orderBuyerContact.name" />
               <div class="flex items-center mt-1">
                 <AppContactLine
-                  contact-type="email"
-                  :contact-url="orderBuyerContact.email"
-                  :contact-value="orderBuyerContact.email"
+                  type="email"
+
+                  :value="orderBuyerContact.email"
                 />
                 <AppContactLine
                   class="ml-4"
-                  contact-type="phone"
-                  :contact-url="orderBuyerContact.phone"
-                  :contact-value="orderBuyerContact.phone"
+                  type="phone"
+                  :value="orderBuyerContact.phone"
                 />
                 <AppContactLine
                   class="ml-4"
-                  contact-type="phone"
-                  :contact-url="orderBuyerContact.fax"
-                  :contact-value="orderBuyerContact.fax"
+                  type="phone"
+                  :value="orderBuyerContact.fax"
                 />
               </div>
             </div>
