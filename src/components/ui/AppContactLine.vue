@@ -1,18 +1,22 @@
 <template>
-
+  <div class="flex items-center text-neutral-500":class="isLink && linkClasses">
+  <AppIconSvg v-if="icon" :name="icon" class="mr-1 transition-all"/>
   <a
     v-if="isLink"
     :href="linkUrl"
-    class="text-neutral-500 text-xs font-normal flex items-center transition-all hover:text-primary-500"
+    class=" text-xs font-normal flex items-center  "
     >{{ value }}</a
   >
-  <span v-else class="text-neutral-500 text-xs font-normal flex items-center">{{
+  <span v-else class=" text-xs font-normal flex items-center">{{
     value
   }}</span>
+
+  </div>
 </template>
 
 <script setup>
 import { computed } from 'vue'
+import AppIconSvg from './AppIconSvg.vue'
 
 const props = defineProps({
   type: {
@@ -33,6 +37,7 @@ const props = defineProps({
 })
 
 const isLink = computed(() => ['email', 'phone'].includes(props.type))
+const linkClasses = computed(() => 'hover:text-primary-500')
 
 const linkUrl = computed(() => {
   switch (props.type) {
