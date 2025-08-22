@@ -15,17 +15,19 @@
               <div class="flex items-center mt-1">
                 <AppContactLine
                   type="email"
-
+                  icon="mail"
                   :value="orderBuyerContact.email"
                 />
                 <AppContactLine
                   class="ml-4"
                   type="phone"
+                  icon="phone"
                   :value="orderBuyerContact.phone"
                 />
                 <AppContactLine
                   class="ml-4"
                   type="phone"
+                  icon="fax"
                   :value="orderBuyerContact.fax"
                 />
               </div>
@@ -39,7 +41,11 @@
             >
               {{ orderStatus }}
             </p>
-            <p class="text-neutral-500 text-xs font-normal mt-1">{{ orderCreatedAt }}</p>
+            <div class="flex items-center">
+              <p class="text-neutral-500 text-xs font-normal mt-1">{{ orderCreatedAt }}</p>
+              <button class="ml-1 transition-all cursor-pointer text-neutral-300 hover:-translate-y-1"> <AppIconSvg  name="tip" size="16" /></button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -49,6 +55,7 @@
 <script setup>
 import { computed } from 'vue'
 import AppContactLine from '../ui/AppContactLine.vue'
+import AppIconSvg from '../ui/AppIconSvg.vue'
 
 const props = defineProps({
   orderNumber: {
