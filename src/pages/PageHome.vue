@@ -1,5 +1,5 @@
 <template>
-  <main class="pt-6">
+  <main class="pt-0 lg:pt-6">
     <OrderHeader />
   </main>
 </template>
