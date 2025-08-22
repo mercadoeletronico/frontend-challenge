@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), 'VITE_');
-  console.log(env.VITE_BACKEND_URL);
+
   return {
     plugins: [vue(), tailwindcss()],
     server: {

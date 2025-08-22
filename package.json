@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@brayamvalero/vue3-skeleton": "^2.0.0",
     "@tailwindcss/vite": "^4.1.12",
     "axios": "^1.11.0",
     "pinia": "^3.0.3",
