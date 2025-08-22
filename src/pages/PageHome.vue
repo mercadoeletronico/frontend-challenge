@@ -18,9 +18,15 @@
       <div class="container mx-auto lg:px-0 px-4">
         <AppAccordion title="Addresses">
           <template #content>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-              <template >
-                <AddressCard v-for="address in orderData.value?.addresses" :key="address.id"  :address="address" />
+            <div class="grid grid-cols-1 md:grid-cols-3 items-start gap-4 mt-4">
+              <template v-if="loading">
+                <AppCardSkeleton width-contact="100px" />
+                <AppCardSkeleton width-contact="100px" :two-columns="false" />
+                <AppCardSkeleton width-contact="100px" />
+              </template>
+
+              <template v-else-if="!loading && orderData.value?.addresses">
+                <AddressCard v-for="address in orderData.value.addresses" :key="address.id" :address="address" />
               </template>
 
             </div>
