@@ -7,8 +7,11 @@
       :order-currency="orderData.value?.header?.currency" :order-price="orderData.value?.header?.price" />
     <section class="mt-8">
       <div class="container mx-auto lg:px-0 px-4">
-        <SupplierCard :supplier="orderData.value?.supplier" />
+        <AppCardSkeleton v-if="loading" />
+        <SupplierCard v-else :supplier="orderData.value?.supplier" />
+
       </div>
+
 
     </section>
     <section class="mt-8">
@@ -35,7 +38,11 @@ import { storeToRefs } from 'pinia';
 import SupplierCard from '../components/supplier/SupplierCard.vue';
 import AddressCard from '../components/addresses/AddressCard.vue';
 import AppAccordion from '../components/ui/AppAccordion.vue';
-const { orderData } = storeToRefs(useOrderStore())
+import AppCardSkeleton from '../components/ui/AppCardSkeleton.vue';
+
+
+
+const { orderData, loading } = storeToRefs(useOrderStore())
 const { getOrderById } = useOrderStore();
 
 

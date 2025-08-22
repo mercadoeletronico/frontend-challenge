@@ -12,11 +12,14 @@ export const useOrderStore = defineStore('order', () => {
 
   async function getOrderById(id) {
     try {
+      loading.value = true
       const _id = route.params.id ?? id
       const response = await api.get(`orders/${_id}`);
       orderData.value = response.data
     } catch (error) {
       console.warn('Failed to get order', error);
+    } finally {
+      loading.value = false
     }
   }
 

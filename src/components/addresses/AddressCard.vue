@@ -55,8 +55,5 @@ const addressCodeStr = computed(() => {
 })
 
 
-const activeTwoColumns = computed(() => {
-  return props.address.label !== 'Bill to'
-})
 
 </script>
