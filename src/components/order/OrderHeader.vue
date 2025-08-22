@@ -31,9 +31,9 @@
               <Popper content="
            Creation date and time of this order.
               " :hover="true">
-                <button class="ml-1 transition-all cursor-pointer text-neutral-300 hover:-translate-y-1">
+                <span class=" block ml-1 transition-all cursor-pointer text-neutral-300 hover:-translate-y-1">
                   <AppIconSvg name="tip" size="16" />
-                </button>
+                </span>
               </Popper>
 
             </div>
