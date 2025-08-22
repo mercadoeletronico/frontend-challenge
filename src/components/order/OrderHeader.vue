@@ -12,7 +12,7 @@
             <h2 class="font-semibold text-[1.25rem] text-neutral-700">{{ orderBuyer }}</h2>
             <div class="mt-2 lg:mt-3">
               <AppContactLine :value="orderBuyerContact.name" />
-              <div class="flex items-start md:items-center md:flex-row flex-col mt-1">
+              <div class="flex items-start md:items-center md:flex-row flex-col mt-2 lg:mt-1">
                 <AppContactLine
                   type="email"
                   icon="mail"
