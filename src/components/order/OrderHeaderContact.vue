@@ -1,10 +1,8 @@
 <template>
   <div class="mt-2 lg:mt-3">
-
+    <AppContactLine v-if="orderBuyerContact.name" icon="user" :value="orderBuyerContact.name" />
     <ul class="flex items-start md:items-center md:flex-row flex-col mt-2 lg:mt-1">
-      <li v-if="orderBuyerContact.name">
-        <AppContactLine :value="orderBuyerContact.name" />
-      </li>
+
       <li v-if="orderBuyerContact.email">
         <AppContactLine type="email" icon="mail" :value="orderBuyerContact.email" />
       </li>
