@@ -1,15 +1,10 @@
 <template>
-  <div class="flex items-center text-neutral-500":class="isLink && linkClasses">
-  <AppIconSvg v-if="icon" :name="icon" class="mr-1 transition-all"/>
-  <a
-    v-if="isLink"
-    :href="linkUrl"
-    class=" text-xs font-normal flex items-center  "
-    >{{ value }}</a
-  >
-  <span v-else class=" text-xs font-normal flex items-center">{{
-    value
-  }}</span>
+  <div class="flex items-center text-neutral-500" :class="isLink && linkClasses">
+    <AppIconSvg v-if="icon" :name="icon" class="mr-1 transition-all" />
+    <a v-if="isLink" :href="linkUrl" class=" text-xs font-normal flex items-center  ">{{ value }}</a>
+    <span v-else class=" text-xs font-normal flex items-center">{{
+      value
+    }}</span>
 
   </div>
 </template>

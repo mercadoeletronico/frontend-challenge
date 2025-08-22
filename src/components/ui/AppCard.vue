@@ -4,7 +4,8 @@
       <p class="text-neutral-500 text-xs font-normal">{{ categoryTitle }}</p>
       <div class="flex items-center mt-1">
         <h3 class="text-sm text-neutral-700 font-semibold leading-[120%]">{{ title }}</h3>
-        <AppBadge v-if="showBadge" class="ml-2" text="Badge" />
+
+        <AppBadge v-if="textBage" class="ml-2" :text="textBage" />
       </div>
     </div>
     <slot name="content"></slot>
@@ -17,15 +18,17 @@ import AppBadge from './AppBadge.vue'
 const props = defineProps({
   categoryTitle: {
     type: String,
-    default: 'Category',
+    default: '',
   },
   title: {
     type: String,
-    default: 'Title',
+    default: '',
   },
-  showBadge: {
-    type: Boolean,
-    default: true,
-  },
+
+
+  textBage: {
+    type: String,
+    default: '',
+  }
 })
 </script>
