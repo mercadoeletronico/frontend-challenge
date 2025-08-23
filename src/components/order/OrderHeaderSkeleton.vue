@@ -18,7 +18,6 @@
             <Skeleton width="160px" height="28px" class="mt-1" />
             <Skeleton width="200px" height="16px" class="mt-1" />
           </div>
-
         </div>
       </div>
     </div>
