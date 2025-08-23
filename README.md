@@ -73,4 +73,7 @@ Para rodar os testes em um ambiente de integração contínua (CI) sem a interfa
 ```bash
 npm run test:e2e:ci
 ```
+## ☁️ Ambiente de Produção
+Para acessar o ambiente de produção basta clicar [aqui](https://challenge-mercado-eletronico-altamiro.netlify.app/) ou acessar [https://challenge-mercado-eletronico-altamiro.netlify.app/](https://challenge-mercado-eletronico-altamiro.netlify.app/)
+
 ⌨️ Feito por [Altamiro Bruno](https://www.linkedin.com/in/altamirobruno/) 😊
