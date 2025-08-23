@@ -54,61 +54,23 @@ O servidor será iniciado na porta `5173`. Acesse [http://localhost:5173](http:/
 
 ---
 
-## ⚡ O Desafio
+## ✅ Testes E2E com Cypress
 
-Você deverá criar uma **página de detalhes de um processo** seguindo o layout fornecido.
+O projeto inclui uma suite de testes de ponta a ponta com Cypress, que pode ser executada em dois modos diferentes.
 
-**Layout disponível em:**
-[Link do Figma](https://www.figma.com/design/Tddaiz626kkBlD4NclUS7m/Front-end-Challenge?node-id=1-4738&m=dev)
+### 💻 Modo Interativo (com interface gráfica)
 
-> Caso tenha dificuldades para acessar o layout, nos avise.
+Para executar os testes com a interface gráfica do Cypress, o que é útil para depuração e desenvolvimento local, use o seguinte comando:
 
-Os dados apresentados pela página deverão ser consumidos através da seguinte API.
+```bash
+npm run test:e2e
+```
 
-> GET https://api.mercadoe.space/orders/1
+### 💻 Modo Interativo (com interface gráfica)
 
----
+Para rodar os testes em um ambiente de integração contínua (CI) sem a interface gráfica, use o seguinte comando:
 
-## 📋 Requisitos
-
-### ✅ Obrigatórios
-- **Desenvolvimento utilizando Vue2 ou Vue3**
-- **Documentação no README**
-  - Como instalar e rodar o projeto
-  - Tecnologias utilizadas
-- **Design responsivo**
-  - A página deve se adaptar a diferentes tamanhos de tela
-- **Deploy em cloud**
-  - Publicar o projeto em algum serviço (Vercel, Netlify, Render, etc.)
-
-### 💡 Diferenciais
-- Arquitetura simples e organizada (*Keep it simple!*)
-- Testes unitários e/ou e2e
-  *(Jest, Vitest, Cypress, Playwright...)*
-- Boas práticas de versionamento e commits claros
-- Explicação de alterações no layout, se houver
-
----
-
-## 🚀 Entrega
-
-Envie para o(a) recrutador(a):
-
-1. **Link público do projeto rodando em cloud**
-2. **Código-fonte do projeto**, em uma das formas:
-   - Link para repositório público no GitHub
-   - Fork deste repositório + branch com seu nome + Pull Request
-   - Link de download do código
-
----
-
-## 🔎 O que será avaliado
-
-| Critério                  | Descrição                                                                 |
-|---------------------------|---------------------------------------------------------------------------|
-| **Organização do código** | Estrutura clara, componentização e boas práticas                          |
-| **Fidelidade ao layout**  | Aderência ao design e responsividade                                      |
-| **Simplicidade**          | Solução fácil de entender e manter                                        |
-| **Testes (opcional)**     | Cobertura e qualidade dos testes unitários e/ou e2e                       |
-
-Boa sorte! 🎉
+```bash
+npm run test:e2e:ci
+```
+⌨️ Feito por [Altamiro Bruno](https://www.linkedin.com/in/altamirobruno/) 😊
