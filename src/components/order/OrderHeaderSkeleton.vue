@@ -3,7 +3,7 @@
     <div class="container mx-auto ">
       <div class="flex items-start lg:flex-row flex-col">
         <Skeleton class="lg:rounded-r-lg w-full lg:w-[200px]" height="110px" />
-        <div class="w-full flex lg:flex-row flex-col justify-between lg:pl-6 lg:mt-0 mt-6 lg:px-0 px-4">
+        <div class="w-full flex lg:flex-row flex-col justify-between lg:pl-6 lg:mt-0 mt-6 px-6">
           <div>
             <Skeleton width="194px" height="28px" />
             <div class="mt-2 lg:mt-3">

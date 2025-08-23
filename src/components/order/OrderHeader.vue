@@ -1,13 +1,13 @@
 <template>
   <header>
-    <div class="container mx-auto ">
+    <div class="container mx-auto px-0 md:px-6 ">
       <div v-if="!loading" class="flex items-start lg:flex-row flex-col">
-        <div class="bg-primary-500 py-8 px-4  lg:p-4  lg:rounded-r-lg min-w-full lg:min-w-[200px]">
+        <div class="bg-primary-500 py-8 px-4 lg:p-4  md:rounded-r-lg min-w-full lg:min-w-[200px]">
           <h3 class="text-lg text-white font-normal leading-6">Pre-Order</h3>
           <p class="font-bold text-white text-2xl leading-8 mt-1">{{ orderNumber }}</p>
           <p class="font-normal text-white text-xs mt-1">{{ orderSerialNumberStr }}</p>
         </div>
-        <div class="w-full flex lg:flex-row flex-col justify-between lg:pl-6 lg:mt-0 mt-6 lg:px-0 px-4">
+        <div class="w-full flex lg:flex-row flex-col justify-between lg:pl-6 lg:mt-0 mt-6 px-6 md:px-0">
           <div>
             <h2 class="font-semibold text-[1.25rem] text-neutral-700">{{ orderBuyer }}</h2>
             <OrderHeaderContact :order-buyer-contact="orderBuyerContact" />
