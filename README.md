@@ -1,8 +1,8 @@
-<img src="https://cdn.me.com.br/logos/me_primary.png" alt="ME">
+# Desafio Mercado Eletrônico 
 
-# Front-end Challenge
+Teste prático desenvolvido para a empresa Mercado Eletrônico.
 
-Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end! 🚀
+### Desenvolvido com:
 
 * [Vue 3](https://vuejs.org/) - Vue 3
 
@@ -16,7 +16,7 @@ Bem-vindo(a) ao nosso teste para desenvolvedores(as) front-end! 🚀
 
 * [Axios](https://axios-http.com/ptbr/docs/intro) - Axios
 
-* [Github Actions](https://github.com/features/actions) - Github Actions CI
+* [Github Actions](https://github.com/features/actions) - Github Actions 
 
 ## 🚀 Começando
 
@@ -41,11 +41,18 @@ Siga os passos abaixo para instalar e rodar o projeto.
     ```bash
     cd challenge-mercado-eletronico
     ```
-3.  Instale as dependências:
+3 . Configure as variáveis de ambiente
+
+Crie um arquivo na raiz do projeto chamado `.env` e adicione a URL da sua API.
+```env
+VITE_BACKEND_URL="https://api.mercadoe.space"
+```
+
+4.  Instale as dependências:
     ```bash
     npm install
     ```
-4.  Execute a aplicação em modo de desenvolvimento:
+5.  Execute a aplicação em modo de desenvolvimento:
     ```bash
     npm run dev
     ```
