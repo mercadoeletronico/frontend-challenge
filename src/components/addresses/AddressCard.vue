@@ -1,29 +1,29 @@
 <template>
 
-  <AppCard :category-title="address?.label" :title="address?.name" :text-bage="addressCodeStr">
+  <AppCard :category-title="address?.label" :title="address?.name" :text-bage="addressCodeStr" data-cy="address-card">
     <template #content>
       <div class="grid grid-cols-1  mt-4 gap-1 " :class="{
         'md:grid-cols-2': activeTwoColumns
       }">
         <ul>
-          <li v-if="address?.address">
+          <li v-if="address?.address" data-cy="address-address">
             <AppContactLine icon="pin" :value="address.address" class="mt-2 md:mt-1" />
           </li>
-          <li v-if="address?.contact?.name">
+          <li v-if="address?.contact?.name" data-cy="address-contact-name">
             <AppContactLine icon="user" :value="address.contact.name" class="mt-2 md:mt-1" />
           </li>
         </ul>
         <ul>
-          <li v-if="address.contact?.email">
+          <li v-if="address.contact?.email" data-cy="address-contact-email">
             <AppContactLine icon="mail" type="email" :value="address.contact.email" />
           </li>
-          <li v-if="address?.contact?.phone">
+          <li v-if="address?.contact?.phone" data-cy="address-contact-phone">
             <AppContactLine icon="phone" type="phone" :value="address.contact.phone" class="mt-2 md:mt-1" />
           </li>
-          <li v-if="address?.contact?.fax">
+          <li v-if="address?.contact?.fax" data-cy="address-contact-fax">
             <AppContactLine icon="fax" type="phone" :value="address.contact.fax" class="mt-2 md:mt-1" />
           </li>
-          <li v-if="address?.readAt">
+          <li v-if="address?.readAt" data-cy="address-read-at">
             <AppContactLine icon="eye" :value="address.readAt" class="mt-2 md:mt-1" />
           </li>
 

@@ -1,30 +1,30 @@
 <template>
-  <AppCard category-title="Supplier" :title="supplier?.name" :text-bage="supplierCodeStr">
+  <AppCard category-title="Supplier" :title="supplier?.name" :text-bage="supplierCodeStr" data-cy="supplier-card">
     <template #content>
       <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-1 ">
         <ul>
-          <li v-if="supplier?.document?.value">
+          <li v-if="supplier?.document?.value" data-cy="supplier-document">
             <AppContactLine icon="identification" :value="supplier.document.value" />
           </li>
-          <li v-if="supplier?.address">
+          <li v-if="supplier?.address" data-cy="supplier-address">
             <AppContactLine icon="pin" :value="supplier.address" class="mt-2 md:mt-1" />
           </li>
 
-          <li v-if="supplier?.contact?.name">
+          <li v-if="supplier?.contact?.name" data-cy="supplier-contact-name">
             <AppContactLine icon="user" :value="supplier.contact.name" class="mt-2 md:mt-1" />
           </li>
         </ul>
         <ul>
-          <li v-if="supplier.contact?.email">
+          <li v-if="supplier.contact?.email" data-cy="supplier-contact-email">
             <AppContactLine icon="mail" type="email" :value="supplier.contact.email" />
           </li>
-          <li v-if="supplier?.contact?.phone">
+          <li v-if="supplier?.contact?.phone" data-cy="supplier-contact-phone">
             <AppContactLine icon="phone" type="phone" :value="supplier.contact.phone" class="mt-2 md:mt-1" />
           </li>
-          <li v-if="supplier?.contact?.fax">
+          <li v-if="supplier?.contact?.fax" data-cy="supplier-contact-fax">
             <AppContactLine icon="fax" type="phone" :value="supplier.contact.fax" class="mt-2 md:mt-1" />
           </li>
-          <li v-if="supplier?.readAt">
+          <li v-if="supplier?.readAt" data-cy="supplier-read-at">
             <AppContactLine icon="eye" :value="supplier.readAt" class="mt-2 md:mt-1" />
           </li>
 

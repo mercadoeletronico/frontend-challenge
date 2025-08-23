@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header data-cy="order-header-skeleton">
     <div class="container mx-auto ">
       <div class="flex items-start lg:flex-row flex-col">
         <Skeleton class="lg:rounded-r-lg w-full lg:w-[200px]" height="110px" />

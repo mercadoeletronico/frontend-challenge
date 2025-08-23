@@ -1,10 +1,9 @@
 <template>
-  <div class="rounded-lg bg-white p-4 shadow-level-1">
+  <div v-bind="$attrs" class="rounded-lg bg-white p-4 shadow-level-1">
     <div>
-      <p class="text-neutral-500 text-xs font-normal">{{ categoryTitle }}</p>
+      <p class="text-neutral-500 text-xs font-normal" data-cy="app-card-category">{{ categoryTitle }}</p>
       <div class="flex items-center mt-1">
-        <h3 class="text-sm text-neutral-700 font-semibold leading-[120%]">{{ title }}</h3>
-
+        <h3 class="text-sm text-neutral-700 font-semibold leading-[120%]" data-cy="app-card-title">{{ title }}</h3>
         <AppBadge v-if="textBage" class="ml-2" :text="textBage" />
       </div>
     </div>
@@ -24,11 +23,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
-
-
   textBage: {
     type: String,
     default: '',
-  }
+  },
+  
 })
 </script>

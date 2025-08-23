@@ -3,14 +3,14 @@
     <div class=" cursor-pointer hover:bg-primary-50/40 p-2 transition-all duration-300" @click="toggleAccordion">
       <slot name="header">
         <div class="flex items-center ">
-          <button class="rounded-full w-5 h-5 grid place-items-center bg-primary-50 mr-2 hover:bg-primary-50/70">
+          <button class="rounded-full w-5 h-5 grid place-items-center bg-primary-50 mr-2 hover:bg-primary-50/70" data-cy="accordion-button">
             <AppIconSvg name="arrow" size="16" class="text-primary-500 transition-all duration-300" :class="!isOpen ? 'rotate-180' : 'rotate-0'" />
           </button>
           <p class="text-neutral-700 text-base font-semibold">{{ title }}</p>
         </div>
       </slot>
     </div>
-    <Transition name="accordion-slide">
+    <Transition name="accordion-slide" data-cy="accordion-content">
       <div class="accordion-content" v-if="isOpen">
         <slot name="content"></slot>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-lg bg-white p-4 shadow-level-1">
+  <div class="rounded-lg bg-white p-4 shadow-level-1" >
     <Skeleton width="120px" height="16px" />
     <div class="flex items-center mt-1">
       <Skeleton width="140px" height="16px" />

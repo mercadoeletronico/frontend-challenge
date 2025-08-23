@@ -1,8 +1,9 @@
 <template>
   <div class="flex items-center text-neutral-500" :class="isLink && linkClasses">
     <AppIconSvg v-if="icon" :name="icon" class="mr-1 transition-all flex-shrink-0" />
-    <a v-if="isLink" :href="linkUrl" class=" text-xs font-normal flex items-center  ">{{ value }}</a>
-    <span v-else class=" text-xs font-normal flex items-center">{{
+    <a v-if="isLink" :href="linkUrl" class=" text-xs font-normal flex items-center "
+      data-cy="app-contact-line">{{ value }}</a>
+    <span v-else class=" text-xs font-normal flex items-center" data-cy="app-contact-line">{{
       value
     }}</span>
 
@@ -12,6 +13,7 @@
 <script setup>
 import { computed } from 'vue'
 import AppIconSvg from './AppIconSvg.vue'
+
 
 const props = defineProps({
   type: {
