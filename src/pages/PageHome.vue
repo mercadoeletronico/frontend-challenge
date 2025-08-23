@@ -1,18 +1,13 @@
 <template>
   <main class="pt-0 pb-6 md:py-6 overflow-x-hidden">
-    <OrderHeader :loading="loading" :order-number="orderData.value?.header?.number"
-      :order-serial-number="orderData.value?.header?.serial" :order-buyer="orderData.value?.header?.buyer"
-      :order-buyer-contact="orderData.value?.header?.contact" :order-created-at="orderData.value?.header?.createdAt"
-      :order-status="orderData.value?.header?.status" :order-currency="orderData.value?.header?.currency"
-      :order-price="orderData.value?.header?.price" />
+    <OrderHeaderSkeleton v-if="loading" />
+    <OrderHeader v-else :order-data="orderData.value?.header" />
+
     <section class="mt-8">
       <div class="container mx-auto px-6">
         <AppCardSkeleton v-if="loading" />
         <SupplierCard v-else :supplier="orderData.value?.supplier" />
-
       </div>
-
-
     </section>
     <section class="mt-8">
       <div class="container mx-auto px-6">
@@ -27,7 +22,6 @@
               <template v-else-if="!loading && orderData.value?.addresses">
                 <AddressCard v-for="address in orderData.value.addresses" :key="address.id" :address="address" />
               </template>
-
             </div>
           </template>
         </AppAccordion>
@@ -44,6 +38,7 @@ import SupplierCard from '../components/supplier/SupplierCard.vue';
 import AddressCard from '../components/addresses/AddressCard.vue';
 import AppAccordion from '../components/ui/AppAccordion.vue';
 import AppCardSkeleton from '../components/ui/AppCardSkeleton.vue';
+import OrderHeaderSkeleton from '../components/order/OrderHeaderSkeleton.vue';
 
 
 
