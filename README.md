@@ -2,7 +2,7 @@
 
 Teste prático desenvolvido para a empresa Mercado Eletrônico.
 
-### Desenvolvido com:
+### 🧰 Desenvolvido com:
 
 * [Vue 3](https://vuejs.org/) - Vue 3
 
@@ -18,9 +18,6 @@ Teste prático desenvolvido para a empresa Mercado Eletrônico.
 
 * [Github Actions](https://github.com/features/actions) - Github Actions 
 
-## 🚀 Começando
-
-Estas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
 ### 📋 Pré-requisitos
 
@@ -41,13 +38,12 @@ Siga os passos abaixo para instalar e rodar o projeto.
     ```bash
     cd challenge-mercado-eletronico
     ```
-3 . Configure as variáveis de ambiente
-
-Crie um arquivo na raiz do projeto chamado `.env` e adicione a URL da sua API.
-```env
-VITE_BACKEND_URL="https://api.mercadoe.space"
-```
-
+2.  Configure as variáveis de ambiente:
+   
+       Crie um arquivo na raiz do projeto chamado `.env` e adicione a URL da sua API.
+    ```env
+    VITE_BACKEND_URL="https://api.mercadoe.space/"
+    ```
 4.  Instale as dependências:
     ```bash
     npm install
