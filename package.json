@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "start": "vite",
     "test:e2e": "cypress open",
-    "test:e2e:ci": "cypress run"
+    "test:e2e:ci": "CYPRESS_BASE_URL=https://desafio-mercado-eletronico-altamiro.netlify.app cypress run"
   },
   "dependencies": {
     "@brayamvalero/vue3-skeleton": "^2.0.0",
