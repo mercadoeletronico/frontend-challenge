@@ -77,7 +77,7 @@ describe('Página de detalhes de um pedido', () => {
         cy.intercept('GET', '**/orders/1', (req) => {
             req.reply({ body: mockOrderData, delay: 1000 });
         }).as('getOrderById');
-        cy.visit('http://localhost:5173')
+        cy.visit('/')
 
     });
     it('Está na página de detalhes de um pedido', () => {
