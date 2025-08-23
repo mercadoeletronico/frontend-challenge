@@ -10,11 +10,16 @@
         <div class="mb-2 md:mb-0">
           <div class="text-lg font-semibold text-gray-800">{{ header.buyer }}</div>
           <div class=" items-center text-gray-500 text-sm mt-1">
-            <span class="mr-2"><i class="fas fa-user"></i> {{ header?.contact?.name }}</span>
+            <span class="mr-4">
+              <font-awesome-icon icon="fa-regular fa-user" />
+              {{ header?.contact?.name }}
+            </span>
             <div>
-              <span class="mr-2"><i class="fas fa-envelope"></i> {{ header?.contact?.email }}</span>
-              <span class="mr-2"><i class="fas fa-phone"></i> {{ header?.contact?.phone }}</span>
-              <span><i class="fas fa-fax"></i> {{ header?.contact?.fax }}</span>
+              <span class="mr-4"><font-awesome-icon class="pr-1" icon="fa-regular fa-envelope" />{{
+                header?.contact?.email
+              }}</span>
+              <span class="mr-4"><font-awesome-icon icon="fa-solid fa-phone" /> {{ header?.contact?.phone }}</span>
+              <span><font-awesome-icon icon="fa-solid fa-fax" /> {{ header?.contact?.fax }}</span>
             </div>
           </div>
         </div>
