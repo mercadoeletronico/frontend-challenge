@@ -1,14 +1,18 @@
 <template>
   <main class="pt-0 pb-6 md:py-6 overflow-x-hidden">
     <OrderHeaderSkeleton v-if="loading" />
-    <OrderHeader v-else :order-data="orderData.value?.header" />
+    <OrderHeader v-else-if="!loading && orderData.value?.header" :order-data="orderData.value?.header" />
+    <AppNoData v-else-if="!loading && !orderData.value?.header" class="col-span-3" message="No order found." />
+    
 
     <section class="mt-8">
       <div class="container mx-auto px-6">
         <AppCardSkeleton v-if="loading" />
-        <SupplierCard v-else :supplier="orderData.value?.supplier" />
+        <SupplierCard v-else-if="!loading && orderData.value?.supplier" :supplier="orderData.value.supplier" />
+        <AppNoData v-else-if="!loading && !orderData.value?.supplier" class="col-span-3" message="No supplier found." />
       </div>
     </section>
+
     <section class="mt-8">
       <div class="container mx-auto px-6">
         <AppAccordion title="Addresses">
@@ -18,6 +22,9 @@
                 <AppCardSkeleton width-contact="100px" :show-badge="true" />
                 <AppCardSkeleton width-contact="100px" :two-columns="false" />
                 <AppCardSkeleton width-contact="100px" />
+              </template>
+              <template v-else-if="!loading && !orderData.value?.addresses?.length">
+                <AppNoData class="col-span-3" message="No addresses found." />
               </template>
               <template v-else-if="!loading && orderData.value?.addresses">
                 <AddressCard v-for="address in orderData.value.addresses" :key="address.id" :address="address" />
@@ -30,16 +37,16 @@
   </main>
 </template>
 <script setup>
-import { onMounted } from 'vue';
-import OrderHeader from '../components/order/OrderHeader.vue'
-import { useOrderStore } from '../stores/order.store';
 import { storeToRefs } from 'pinia';
-import SupplierCard from '../components/supplier/SupplierCard.vue';
+import { onMounted } from 'vue';
 import AddressCard from '../components/addresses/AddressCard.vue';
+import OrderHeader from '../components/order/OrderHeader.vue';
+import OrderHeaderSkeleton from '../components/order/OrderHeaderSkeleton.vue';
+import SupplierCard from '../components/supplier/SupplierCard.vue';
 import AppAccordion from '../components/ui/AppAccordion.vue';
 import AppCardSkeleton from '../components/ui/AppCardSkeleton.vue';
-import OrderHeaderSkeleton from '../components/order/OrderHeaderSkeleton.vue';
-
+import AppNoData from '../components/ui/AppNoData.vue';
+import { useOrderStore } from '../stores/order.store';
 
 
 const { orderData, loading } = storeToRefs(useOrderStore())
