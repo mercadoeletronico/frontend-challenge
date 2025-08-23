@@ -45,6 +45,9 @@
 </template>
 
 <script setup>
+import { formatDate } from '@/utils/dateUtils.js'
+import { watch } from 'vue'
+
 const props = defineProps({
   header: {
     type: Object,
@@ -52,9 +55,8 @@ const props = defineProps({
   }
 })
 
-function formatDate(dateStr) {
-  if (!dateStr) return ''
-  const date = new Date(dateStr)
-  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')} at ${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}:${String(date.getSeconds()).padStart(2, '0')}`
-}
+
+watch(props, (newVal) => {
+  console.log('Supplier data updated:', newVal)
+}, { deep: true })
 </script>
