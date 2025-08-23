@@ -141,12 +141,14 @@ describe('Página de detalhes de um pedido', () => {
 
 
     it("Mostra o tooltip de informação da data de criação do pedido quando passamos o mouse", () => {
+        cy.wait('@getOrderById');
         cy.getBySel('order-tooltip').trigger('mouseover')
         cy.get('.popper').should('be.visible').contains('Date and time of order creation')
     })
 
 
     it("Fecha e abre novamente o accordion de endereços", () => {
+        cy.wait('@getOrderById');
         cy.getBySel('accordion-button').should('be.visible').click()
         cy.getBySel('accordion-content').should('not.exist')
         cy.getBySel('accordion-button').should('be.visible').click()
