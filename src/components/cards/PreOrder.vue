@@ -1,6 +1,7 @@
 <template>
-  <div class="flex h-[110px] bg-white shadow overflow-hidden w-full">
-    <div class="bg-[#1052E0] rounded-r-lg text-white flex flex-col items-left justify-center px-6 py-4 min-w-[140px]">
+  <div class="flex lg:h-[110px] bg-whiteoverflow-hidden w-full border-none">
+    <div
+      class="bg-[#1052E0] rounded-r-lg text-white flex flex-col items-left justify-center px-2 lg:px-6 py-3  min-w-[140px]">
       <span class="text-xs font-semibold uppercase">Pre-Order</span>
       <span class="text-2xl font-bold">{{ header.number }}</span>
       <span class="text-xs">#ME{{ header.serial }}</span>
@@ -17,7 +18,7 @@
             <div>
               <span class="mr-4"><font-awesome-icon class="pr-1" icon="fa-regular fa-envelope" />{{
                 header?.contact?.email
-              }}</span>
+                }}</span>
               <span class="mr-4"><font-awesome-icon icon="fa-solid fa-phone" /> {{ header?.contact?.phone }}</span>
               <span><font-awesome-icon icon="fa-solid fa-fax" /> {{ header?.contact?.fax }}</span>
             </div>

@@ -1,7 +1,11 @@
 <template>
-  <CardPreOrder v-if="headerData" :header="headerData.header" />
-  <CardSupplierOrder v-if="headerData" :supplier="headerData.supplier" />
-  <AccordionAdressesOrder v-if="headerData" :addresses="headerData.addresses" />
+  <div v-if="headerData" class="p-0 lg:p-6 space-y-8">
+    <CardPreOrder class="lg:pr-0 pr-2" :header="headerData.header" />
+    <CardSupplierOrder class="lg:m-0 m-2" :supplier="headerData.supplier" />
+    <div class="mt-8">
+      <AccordionAdressesOrder class="lg:m-0 m-2" :addresses="headerData.addresses" />
+    </div>
+  </div>
   <div v-else>Carregando...</div>
 
 
