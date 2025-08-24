@@ -18,11 +18,6 @@ export default defineConfig({
         target: 'https://api.mercadoe.space',
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, ''),
-        configure: (proxy, options) => {
-          proxy.on('proxyReq', (proxyReq, req, res) => {
-            proxyReq.setHeader('Access-Control-Allow-Origin', '*')
-          })
-        }
       }
     }
   },
