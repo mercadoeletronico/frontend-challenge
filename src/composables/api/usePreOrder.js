@@ -11,7 +11,8 @@ export function usePreOrder() {
     error.value = null
 
     try {
-      const response = await axios.get(`/api/orders/${orderId}`)
+      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://api.mercadoe.space'
+      const response = await axios.get(`${apiBaseUrl}/orders/${orderId}`)
       preOrder.value = response.data
       return response.data
     } catch (err) {
