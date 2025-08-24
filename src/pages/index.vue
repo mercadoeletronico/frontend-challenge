@@ -1,14 +1,12 @@
 <template>
-  <div v-if="headerData" class="p-0 lg:p-6 space-y-8">
-    <CardPreOrder class="lg:pr-0 pr-2" :header="headerData.header" />
-    <CardSupplierOrder class="lg:m-0 m-2" :supplier="headerData.supplier" />
+  <div v-if="headerData" class="p-0 lg:p-6 space-y-8" data-cy="main-content">
+    <CardPreOrder data-cy="pre-order" class="lg:pr-0 pr-2" :header="headerData.header" />
+    <CardSupplierOrder data-cy="supplier" class="lg:m-0 m-2" :supplier="headerData.supplier" />
     <div class="mt-8">
-      <AccordionAdressesOrder class="lg:m-0 m-2" :addresses="headerData.addresses" />
+      <AccordionAdressesOrder data-cy="addresses" class="lg:m-0 m-2" :addresses="headerData.addresses" />
     </div>
   </div>
-  <div v-else>Carregando...</div>
-
-
+  <div v-else data-cy="loading">Carregando...</div>
 </template>
 
 <script setup>

@@ -1,0 +1,26 @@
+{
+  "header": {
+    "number": "4510001114",
+    "serial": "1223344",
+    "buyer": "MTP West Buyer",
+    "contact": null,
+    "currency": "USD",
+    "price": "20000",
+    "status": "Need to confirm",
+    "createdAt": "2020-04-16T12:32:55.000Z"
+  },
+  "supplier": {
+    "name": "Motion Industries INC.",
+    "code": "101908",
+    "document": null,
+    "address": "",
+    "contact": {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "fax": ""
+    },
+    "readAt": "2020-05-23T09:45:20.000Z"
+  },
+  "addresses": []
+}
