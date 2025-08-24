@@ -27,6 +27,5 @@ const { fetchPreOrder } = usePreOrder()
 
 onMounted(async () => {
   headerData.value = await fetchPreOrder()
-  console.log(headerData.value.header)
 })
 </script>
